@@ -1,15 +1,8 @@
-@import './utils/setup-box-sizing.css';
-@import './pages/start-page.css';
-@import './pages/jazz-club.css';
-@import './pages/metal-club.css';
+@import './setup-box-sizing.css';
+@import '../pages/start-page.css';
+@import '../pages/jazz-club.css';
+@import '../pages/metal-club.css';
 
 body {
   margin: 20px
-}
-
-img {
-  width: 50%;
-  height: auto;
-  display: block;
-  margin: 20px auto;
 }

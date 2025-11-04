@@ -1,8 +1,15 @@
-body.start {
-  background-color: #eee;
-  color: #222;
+  body.start {
+    background-color: #eee;
+    color: #222;
 
-  a {
-    color: blue;
+    a {
+      color: blue;
+    }
   }
-}
+
+  img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
