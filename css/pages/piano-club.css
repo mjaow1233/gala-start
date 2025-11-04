@@ -1,9 +1,7 @@
-/* not done */
-body.metal-klubben {
+body.piano-club {
   background-color: black;
   color: white;
-
-  a {
-    color: yellow;
-  }
+}
+body.piano-club a {
+  color: yellow;
 }
