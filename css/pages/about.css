@@ -1,36 +1,38 @@
-body.start {
+body.about {
   background: #f8f8f8;
+  font-family: system-ui, sans-serif;
   color: #222;
 }
 
+
 header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 90%;
-  padding: 2rem 0;
+  padding: 1.5rem 5%;
   border-bottom: 1px solid #ddd;
-  background-color: #a5a5a5;
-  box-sizing: border-box;
-  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+header nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
 }
 
 
 .hero img {
-  width: 90%;
+  width: 100%;
+  max-width: 800px;
   height: auto;
   display: block;
-  margin: auto;
+  margin: 1.5rem auto;
   border: 1px solid #ccc;
-}
-
-
-
-header nav a {
-  display: inline-block;
-  text-decoration: none;
-
-  text-align: center;
 }
 
 

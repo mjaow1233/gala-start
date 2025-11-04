@@ -7,6 +7,10 @@ body {
   margin: 20px
 }
 
+nav {
+  align-content: center;
+}
+
 a {
   align-content: center;
 }

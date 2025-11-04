@@ -1,6 +1,6 @@
 import clubInfoAndEvents from "../utils/club-info-and-events.js";
 
-export default async function start() {
+export default async function events() {
   const eventsHtml = await clubInfoAndEvents();
 
   return `
