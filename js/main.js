@@ -12,7 +12,7 @@ const isAdmin = true;
 
 const Clubmenu = {
   "jazz-klubben": { label: 'Jazz-klubben', function: jazzClub },
-  "hamze-klubben": { label: 'hamze-klubben', function: hamzeClub }
+  "hamze-klubben": { label: 'hamze-klubben', function: hamzeClub },
   "balett-klubben": { label: 'Balettklubben', function: balettKlubben }
 
 };
@@ -23,7 +23,7 @@ const menu = {
   "clubs": { label: 'Clubs', function: clubs },
   "bookEvent": { label: 'Book Event', function: bookEvent },
   "createEvent": { label: 'Create Event', function: createEvent, isAdminPage: true },
-
+...Clubmenu
 };
 function createMenu() {
 
