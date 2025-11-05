@@ -9,6 +9,11 @@
       "id": "fg5i",
       "name": "Metal-klubben",
       "description": "Ylande metal som får dig att vilja erövra världen! Varje vecka med Tom som konferencier."
+    },
+    {
+      "id": "b1e2",
+      "name": "Balettklubben",
+      "description": "Klassisk och modern balett på den stora scenen. Upplev magin i rörelse och musik."
     }
   ],
   "events": [
@@ -32,11 +37,6 @@
       "name": "Fusion-jazzarna Corea's Disciples",
       "description": "Cool fusion-jazz med en massa dim-ackord.",
       "clubId": "a37c"
-    },
-    {
-      "id": "b1e2",
-      "name": "Balettklubben",
-      "description": "Klassisk och modern balett på den stora scenen. Upplev magin i rörelse och musik."
     }
   ]
 }
