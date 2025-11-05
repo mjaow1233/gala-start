@@ -1,37 +1,70 @@
 {
   "clubs": [
     {
-      "id": "a37c",
-      "name": "Jazz-klubben",
-      "description": "Vår laid-back jazz-klubb där vi varje vecka får träffa nya spännande artister."
+      "id": "1",
+      "name": "Jazz-club",
+      "description": "."
     },
     {
-      "id": "fg5i",
-      "name": "Metal-klubben",
-      "description": "Ylande metal som får dig att vilja erövra världen! Varje vecka med Tom som konferencier."
+      "id": "3",
+      "name": "Dj-club",
+      "description": "."
+    },
+    {
+      "id": "5",
+      "name": "Piano-club",
+      "description": "A place for piano enthusiasts to share and enjoy music."
+    },
+    {
+      "id": "7",
+      "name": "Hamze-club",
+      "description": "."
+    },
+    {
+      "id": "9",
+      "name": "Dalmar-club",
+      "description": "."
     }
+    
+    
   ],
   "events": [
     {
-      "id": "43ac",
+      "id": "2",
       "date": "2025-11-05 19:00",
-      "name": "New Orleans-bandet",
-      "description": "New Orleans-bandet spelar old school jazz från 30-talet, med sväng och klarinett.",
-      "clubId": "a37c"
+      "name": ".",
+      "description": ".",
+      "clubId": "1"
     },
     {
-      "id": "57f3",
+      "id": "4",
       "date": "2025-11-06 21:00",
-      "name": "Mega Death-die",
-      "description": "En open stage för death-metal-rockare, 30 minuter per band, upp till 6 band per kväll. Stjäl inte varandras effektpedaler!",
-      "clubId": "fg5i"
+      "name": ".",
+      "description": "",
+      "clubId": "3"
     },
     {
-      "id": "43ac",
+      "id": "6",
       "date": "2025-11-01 19:00",
-      "name": "Fusion-jazzarna Corea's Disciples",
-      "description": "Cool fusion-jazz med en massa dim-ackord.",
-      "clubId": "a37c"
+      "name": ".",
+      "description": "",
+      "clubId": "5"
+    },
+    {
+      "id": "8",
+      "date": ".",
+      "name": ".",
+      "description": ".",
+      "clubId": "7"
+    },
+    {
+      "id": "10",
+      "date": ".",
+      "name": ".",
+      "description": ".",
+      "clubId": "9"
     }
+
+
   ]
 }

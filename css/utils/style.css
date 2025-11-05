@@ -1,10 +1,13 @@
-@import './utils/setup-box-sizing.css';
-@import './pages/start-page.css';
-@import './pages/jazz-club.css';
-@import './pages/metal-club.css';
+@import "../utils/setup-box-sizing.css";
+@import "../pages/start-page.css";
+@import "../pages/jazz-club.css";
+@import "../pages/piano-club.css";
+@import "../pages/dj-club.css";
+@import "../pages/hamze-club.css";
+@import "../pages/dalmar-club.css";
 
 body {
-  margin: 20px
+  margin: 20px;
 }
 
 .pet {

@@ -1,8 +1,7 @@
 body.start {
   background-color: #eee;
   color: #222;
-
-  a {
-    color: blue;
-  }
+}
+body.start a {
+  color: blue;
 }
