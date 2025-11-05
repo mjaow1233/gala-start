@@ -1,0 +1,95 @@
+body.about {
+  background: #f8f8f8;
+  font-family: system-ui, sans-serif;
+  color: #222;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+header nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+
+.hero img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border: 1px solid #ccc;
+}
+
+
+.upcoming {
+  padding: 1rem 5%;
+}
+
+.upcoming h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.event-card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+
+.clubs {
+  margin: 2rem 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.club-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  background: white;
+  min-width: 100px;
+  text-align: center;
+}
+
+.club-btn.add {
+  font-weight: 600;
+}
+
+
+footer {
+  margin-top: 3rem;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
