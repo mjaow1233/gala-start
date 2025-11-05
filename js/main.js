@@ -1,7 +1,7 @@
-import start from '/pages/start.js';
-import jazzClub from '/pages/jazz-klubben.js';
-import metalClub from '/pages/metal-klubben.js';
-import balettKlubben from '/pages/balett-klubben.js';
+import start from './pages/start.js';
+import jazzClub from './pages/jazz-klubben.js';
+import metalClub from './pages/metal-klubben.js';
+import balettKlubben from './pages/balett-klubben.js';
 // Our menu: label to display in menu and 
 // function to run on menu choice
 const menu = {
