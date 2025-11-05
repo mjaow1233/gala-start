@@ -6,4 +6,3 @@ node_modules
 .DS_Store
 # Ignore .vscode settings file
 .vscode/settings.json
-# Ignore json-server database file
