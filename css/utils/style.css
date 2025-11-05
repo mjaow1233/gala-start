@@ -2,7 +2,7 @@
 @import './pages/start-page.css';
 @import './pages/jazz-club.css';
 @import './pages/metal-club.css';
-@import './pages/balett-klubben.css';
+@import '/css/pages/balett-klubben.css';
 body {
   margin: 20px
 }
