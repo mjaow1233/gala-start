@@ -1,45 +1,75 @@
 import start from './pages/start.js';
-import balettKlubben from './pages/balett-klubben.js';
+import jazzClub from './pages/jazz-club.js';
+import hamzeClub from './pages/hamze-club.js';
 import about from './pages/about.js';
 import events from './pages/events.js';
-// Our menu: label to display in menu and 
-// function to run on menu choice
+import createEvent from './pages/create-event.js';
+import clubs from './pages/clubs.js';
+import bookEvent from './pages/book-event.js';
+import balettKlubben from './pages/balett-klubben.js';
+import pianoClub from './pages/piano-club.js';
+import djClub from './pages/dj-club.js';
+
+
+const isAdmin = true;
+
+const Clubmenu = {
+  "jazz-klubben": { label: 'Jazz-klubben', function: jazzClub },
+  "hamze-klubben": { label: 'hamze-klubben', function: hamzeClub },
+  "piano-klubben": { label: 'Piano-klubben', function: pianoClub },
+  "dj-klubben": { label: 'DJ-klubben', function: djClub },
+  "balett-klubben": { label: 'Balettklubben', function: balettKlubben }
+};
+
 const menu = {
   "start": { label: 'Start', function: start },
-  "balett-klubben": { label: 'Balettklubben', function: balettKlubben },
   "about": { label: 'About', function: about },
   "events": { label: 'Events', function: events },
+  "clubs": { label: 'Clubs', function: clubs },
+  "bookEvent": { label: 'Book Event', function: bookEvent },
+  "createEvent": { label: 'Create Event', function: createEvent, isAdminPage: true },
+  
+  ...Clubmenu 
 };
 
 function createMenu() {
-  // Object.entries -> convert object to array
-  // then map to create a-tags (links)
-  // then join everything into one big string
   return Object.entries(menu)
-    .map(([urlHash, { label }]) => `
+    .map(
+      ([urlHash, { label, isAdminPage }]) => {
+        if (isAdminPage && isAdmin) {
+          return `
       <a href="#${urlHash}">${label}</a>
-    `)
-    .join('');
+    `
+        }
+        else if (!isAdminPage) {
+          return `
+      <a href="#${urlHash}">${label}</a>
+    `
+        }
+      }
+    )
+    .join("");
 }
 
 async function loadPageContent() {
-  // if no hash redirect to #start
-  if (location.hash === '') { location.replace('#start'); }
-  // add a class on body so that we can style differnt pages differently
-  document.body.setAttribute('class', location.hash.slice(1));
-  // get the correct function to run depending on location.hash
-  const functionToRun = menu[location.hash.slice(1)].function;
-  // run the function and expect it return a html string
+  if (location.hash === "") {
+    location.replace("#start");
+  }
+  document.body.setAttribute("class", location.hash.slice(1));
+
+  const page = menu[location.hash.slice(1)];
+  if (!page) {
+    document.querySelector("main").innerHTML = "<h2>404 - Sidan finns inte</h2>";
+    console.warn(`Ingen funktion hittades för hash: ${location.hash}`);
+    return;
+  }
+
+  const functionToRun = page.function;
   const html = await functionToRun();
-  // replace the contents of the main element
-  document.querySelector('main').innerHTML = html;
+  document.querySelector("main").innerHTML = html;
 }
 
-// call loadPageContent once on page load
+window.onhashchange = loadPageContent;
 loadPageContent();
 
-// and then on every hash change of the url/location
-window.onhashchange = loadPageContent;
-
-// create the menu and display it
-document.querySelector('header nav').innerHTML = createMenu();
+document.querySelector("header nav").innerHTML = createMenu();

@@ -1,3 +1,4 @@
+/*
 import { getClubInfoAndEvents, getClubDetails } from "../utils/club-info-and-events.js";
 function addBookingListeners() {
   document.querySelectorAll('.book-ticket-button').forEach(button => {
@@ -65,4 +66,10 @@ export default async function balettKlubben() {
   setTimeout(addBookingListeners, 0); 
   
   return html;
+}
+*/
+import clubInfoAndEvents from "../utils/club-info-and-events.js";
+
+export default async function balettKlubben() {
+  return clubInfoAndEvents('b1e2');
 }
