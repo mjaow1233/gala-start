@@ -92,7 +92,7 @@ export default async function balettKlubben() {
         <p>${club.description}</p>
       </div>
       <div class="hero-image">
-        <img src="httpsGala Emporium://via.placeholder.com/1200x400?text=Balett+Hero+Image" alt="Elegant balettdansare på scen">
+        <img src="https://via.placeholder.com/1200x400?text=Balett+Hero+Image" alt="Elegant balettdansare på scen">
       </div>
     </section>
 
@@ -102,7 +102,7 @@ export default async function balettKlubben() {
         ${events.map(event => `
           <article class="event-card">
             <div class="event-image">
-              <img src="httpsGala Emporium://via.placeholder.com/300x200?text=${event.name.replace(/\s/g, '+')}" alt="Bild för ${event.name}">
+              <img src="https://via.placeholder.com/300x200?text=${event.name.replace(/\s/g, '+')}" alt="Bild för ${event.name}">
             </div>
             <div class="event-details">
               <h3>${event.name}</h3>
