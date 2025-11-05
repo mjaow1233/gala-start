@@ -1,15 +1,20 @@
 @import './setup-box-sizing.css';
-@import '../pages/start-page.css'; 
-@import '../pages/balett-klubben.css';
+@import '../pages/start-page.css';
+@import '../pages/jazz-club.css';
 @import '../pages/about.css';
-@import '../pages/events.css';
+@import '../pages/create-club.css';
+@import '../pages/clubs.css';
+@import '../pages/balett-klubben.css';
+
+
 body {
-  margin: 20px
+  margin: 20px;
 }
 
-.pet {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 10px 20px;
-  margin-bottom: 20px;
+nav {
+  align-content: center;
+}
+
+a {
+  align-content: center;
 }
