@@ -1,8 +1,8 @@
-@import '/css/utils/setup-box-sizing.css';
-@import '/css/pages/start-page.css';
-@import '/css/pages/jazz-club.css';
-@import '/css/pages/metal-club.css';
-@import '/css/pages/balett-klubben.css';
+@import './setup-box-sizing.css';
+@import '../pages/start-page.css'; 
+@import '../pages/jazz-club.css';
+@import '../pages/metal-club.css';
+@import '../pages/balett-klubben.css';
 body {
   margin: 20px
 }
