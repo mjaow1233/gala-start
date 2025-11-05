@@ -26,29 +26,22 @@ body.balett-klubben .club-hero {
   align-items: center;
   text-align: center;
   margin-bottom: 40px;
-  position: relative;
-  overflow: hidden; /* För att hantera eventuella överflöd */
+  overflow: hidden; 
 }
 
 body.balett-klubben .club-hero .hero-image img {
   width: 100%;
-  max-height: 400px; /* Begränsa höjden */
-  object-fit: cover; /* Säkerställ att bilden täcker ytan utan att deformeras */
+  max-height: 400px;
+  object-fit: cover; 
   filter: grayscale(20%) brightness(90%); /* Ger en mjukare, konstnärlig känsla */
 }
 
 body.balett-klubben .club-hero .hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.7); /* Halvtransparent vit bakgrund */
   padding: 20px 40px;
   border-radius: 8px;
-  z-index: 10;
-  max-width: 80%; /* Begränsa bredden */
+  max-width: 80%; 
+  margin-bottom: 20px; 
 }
-
 body.balett-klubben .club-hero h1 {
   font-size: 3em;
   margin-bottom: 10px;
