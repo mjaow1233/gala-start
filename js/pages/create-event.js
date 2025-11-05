@@ -1,12 +1,12 @@
-export default function createClub() {
+export default function createEvent() {
   return `
-    <h2>Create a club</h2>
+    <h2>Create an event</h2>
     <form id="club-form">
       <label>Club name</label>
       <input type="text" name="club-name" required>
       <br>
 
-      <label>Description</label>
+      <label>description</label>
       <input type="text" name="description" required>
 <br>
       <button type="submit">Create club</button>
@@ -26,7 +26,7 @@ async function submitForm(event) {
     body: JSON.stringify({ name: clubName, description })
   });
 
-  alert("Club created!");
+  alert("Booking created!");
 }
 
 window.addEventListener("submit", submitForm);
