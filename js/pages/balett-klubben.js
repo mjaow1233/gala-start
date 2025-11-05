@@ -62,9 +62,10 @@ export default async function balettKlubben() {
   });
 }
   */
+// js/pages/balett-klubben.js
 import { getClubInfoAndEvents, getClubDetails } from "../utils/club-info-and-events.js";
 
-// Funktion som fäster eventlyssnare
+// Funktion som fäster eventlyssnare (denna är oförändrad)
 function addBookingListeners() {
   document.querySelectorAll('.book-ticket-button').forEach(button => {
     button.addEventListener('click', (e) => {
@@ -78,13 +79,21 @@ function addBookingListeners() {
 export default async function balettKlubben() {
   const clubId = 'b1e2'; // Ditt Balettklubb ID
 
-  // Hämta klubbens information (beskrivning, namn etc.)
   const club = await getClubDetails(clubId);
-
-  // Hämta evenemang för Balettklubben
   const events = await getClubInfoAndEvents(clubId);
 
-  // Skapa sidans HTML-struktur
+  // Helper-funktion för att välja rätt bildfil baserat på eventnamn
+  const getEventImagePath = (eventName) => {
+    switch (eventName) {
+      case 'Svansjön':
+        return 'img/balett/svansjon.jpg';
+      case 'Nötknäpparen':
+        return 'img/balett/notknapparen.jpg';
+      default:
+        return 'https://via.placeholder.com/300x200?text=Balett+Event'; // Fallback
+    }
+  };
+
   let html = `
     <section class="club-hero">
       <div class="hero-content">
@@ -92,7 +101,7 @@ export default async function balettKlubben() {
         <p>${club.description}</p>
       </div>
       <div class="hero-image">
-        <img src="https://via.placeholder.com/1200x400?text=Balett+Hero+Image" alt="Elegant balettdansare på scen">
+        <img src="img/balett/balett-hero.jpg" alt="Elegant balettdansare på scen">
       </div>
     </section>
 
@@ -102,7 +111,7 @@ export default async function balettKlubben() {
         ${events.map(event => `
           <article class="event-card">
             <div class="event-image">
-              <img src="https://via.placeholder.com/300x200?text=${event.name.replace(/\s/g, '+')}" alt="Bild för ${event.name}">
+              <img src="${getEventImagePath(event.name)}" alt="Bild för ${event.name}">
             </div>
             <div class="event-details">
               <h3>${event.name}</h3>
@@ -122,8 +131,7 @@ export default async function balettKlubben() {
     </section>
   `;
 
-  // Kör denna funktion EFTER att main.js har lagt till HTML:en
   setTimeout(addBookingListeners, 0); 
   
-  return html; // <-- RÄTT: Returnera HTML-koden
+  return html;
 }
