@@ -1,25 +1,21 @@
-import start from "./pages/start.js";
-import jazzClub from "./pages/jazz-club.js";
-import hamzeClub from "./pages/hamze-club.js";
-import dalmarClub from "./pages/dalmar-club.js";
-import djClub from "./pages/dj-club.js";
-import pianoClub from "./pages/piano-club.js";
+import start from './pages/start.js';
+import jazzClub from './pages/jazz-club.js';
+import metalClub from './pages/metal-club.js';
+import about from './pages/about.js';
+import events from './pages/events.js';
 
-// Our menu: label to display in menu and
-// function to run on menu choice
-const menu = {
-  start: { label: "Start", function: start },
-  "jazz-club": { label: "Jazz-club", function: jazzClub },
-  "dj-club": { label: "Dj-club", function: djClub },
-  "piano-club": { label: "Piano-club", function: pianoClub },
-  "hamze-club": { label: "Hamze-club", function: hamzeClub },
-  "dalmar-club": { label: "Dalmar-club", function: dalmarClub },
+
+const Clubmenu = {
+  "jazz-klubben": { label: 'Jazz-klubben', function: jazzClub },
+  "metal-klubben": { label: 'Metal-klubben', function: metalClub }
 };
-
+const menu = {
+  "start": { label: 'Start', function: start },
+  "about": { label: 'About', function: about },
+  "events": { label: 'Events', function: events }
+};
 function createMenu() {
-  // Object.entries -> convert object to array
-  // then map to create a-tags (links)
-  // then join everything into one big string
+
   return Object.entries(menu)
     .map(
       ([urlHash, { label }]) => `
