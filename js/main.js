@@ -23,7 +23,7 @@ const menu = {
   "clubs": { label: 'Clubs', function: clubs },
   "bookEvent": { label: 'Book Event', function: bookEvent },
   "createEvent": { label: 'Create Event', function: createEvent, isAdminPage: true },
-  
+  ...Clubmenu
 };
 function createMenu() {
 
