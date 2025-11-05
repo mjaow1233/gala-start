@@ -1,21 +1,18 @@
-/* Fil: css/pages/balett-klubben.css */
-
-/* Grundläggande styling för Balettklubben */
 body.balett-klubben {
   background-color: #FDF5E6; /* Old Lace */
   color: #5D4037; /* Mörkbrun text */
-  font-family: 'Georgia', serif; /* Elegant typsnitt för rubriker och viss text */
+  font-family: 'Georgia', serif; 
   line-height: 1.6;
 }
 
 body.balett-klubben h1,
 body.balett-klubben h2,
 body.balett-klubben h3 {
-  font-family: 'Playfair Display', serif; /* Ett annat elegant typsnitt (måste importeras) */
+  font-family: 'Playfair Display', serif;
   color: #333;
 }
 
-/* Importera Google Fonts för Playfair Display (läggs högst upp i denna fil) */
+/* Importerade Google Fonts för Playfair Display */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 
@@ -33,7 +30,7 @@ body.balett-klubben .club-hero .hero-image img {
   width: 100%;
   max-height: 400px;
   object-fit: cover; 
-  filter: grayscale(20%) brightness(90%); /* Ger en mjukare, konstnärlig känsla */
+  filter: grayscale(20%) brightness(90%);
 }
 
 body.balett-klubben .club-hero .hero-content {
@@ -45,7 +42,7 @@ body.balett-klubben .club-hero .hero-content {
 body.balett-klubben .club-hero h1 {
   font-size: 3em;
   margin-bottom: 10px;
-  color: #6A057F; /* Djup lila/vinröd accentfärg */
+  color: #6A057F; 
   text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
@@ -54,10 +51,10 @@ body.balett-klubben .club-hero p {
   color: #5D4037;
 }
 
-/* Kommande Evenemang sektionen */
+/*Kommande Evenemang sektionen*/
 body.balett-klubben .upcoming-events {
   margin: 40px auto;
-  max-width: 1200px; /* Centrera och begränsa bredden */
+  max-width: 1200px;
   padding: 0 20px;
 }
 
@@ -70,12 +67,12 @@ body.balett-klubben .upcoming-events h2 {
 
 body.balett-klubben .events-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivt rutnät */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
 body.balett-klubben .event-card {
-  background-color: #FFF; /* Vit bakgrund för varje eventkort */
+  background-color: #FFF; 
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   overflow: hidden;
@@ -97,7 +94,7 @@ body.balett-klubben .event-image img {
 
 body.balett-klubben .event-details {
   padding: 20px;
-  flex-grow: 1; /* Gör så att detaljerna tar upp all tillgänglig yta */
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
@@ -118,12 +115,12 @@ body.balett-klubben .event-date {
 body.balett-klubben .event-details p {
   font-size: 1em;
   color: #5D4037;
-  flex-grow: 1; /* Se till att beskrivningen tar utrymme */
+  flex-grow: 1; 
 }
 
 /* Bokningsknapp */
 body.balett-klubben .book-ticket-button {
-  background-color: #D2691E; /* Orange/brun */
+  background-color: #D2691E; 
   color: white;
   border: none;
   padding: 12px 20px;
@@ -132,11 +129,11 @@ body.balett-klubben .book-ticket-button {
   font-size: 1.1em;
   margin-top: 20px;
   transition: background-color 0.3s ease;
-  align-self: flex-start; /* Placera knappen till vänster */
+  align-self: flex-start;
 }
 
 body.balett-klubben .book-ticket-button:hover {
-  background-color: #A0522D; /* Mörkare orange/brun */
+  background-color: #A0522D;
 }
 
 
@@ -164,7 +161,6 @@ body.balett-klubben .about-ballet p {
   line-height: 1.8;
 }
 
-/* Responsivitet */
 @media (max-width: 768px) {
   body.balett-klubben .club-hero h1 {
     font-size: 2.5em;
@@ -183,12 +179,12 @@ body.balett-klubben .about-ballet p {
   }
 
   body.balett-klubben .event-card {
-    flex-direction: row; /* Ändra till rad-layout på mobil */
+    flex-direction: row; 
     text-align: left;
   }
 
   body.balett-klubben .event-image {
-    flex: 0 0 120px; /* Fasta bredd för bild */
+    flex: 0 0 120px; 
     height: auto;
   }
 
@@ -201,6 +197,6 @@ body.balett-klubben .about-ballet p {
   }
   
   body.balett-klubben .book-ticket-button {
-    align-self: flex-end; /* Knappen till höger på mobil-layout */
+    align-self: flex-end;
   }
 }
