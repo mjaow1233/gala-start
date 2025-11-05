@@ -34,6 +34,11 @@
       "id": "32e5",
       "name": "testklubb3",
       "description": "en tredje testklubb"
+    },
+    {
+      "id": "a25a",
+      "name": "okay",
+      "description": "det här är en okay klubb"
     }
   ],
   "events": [
@@ -47,9 +52,9 @@
     {
       "id": "4",
       "date": "2025-11-06 21:00",
-      "name": ".",
+      "name": "testeventet",
       "description": "",
-      "clubId": "3"
+      "clubId": "5"
     },
     {
       "id": "6",
@@ -71,6 +76,36 @@
       "name": ".",
       "description": ".",
       "clubId": "9"
+    }
+  ],
+  "visitor": [
+    {
+      "eventid": "10",
+      "name": ".",
+      "clubId": "9",
+      "email": "a@a.com",
+      "id": "99f2"
+    },
+    {
+      "id": "a314",
+      "clubId": "7",
+      "eventid": "8",
+      "name": "fewfew",
+      "email": "test@test.com"
+    },
+    {
+      "id": "706b",
+      "clubId": "5",
+      "eventid": "4",
+      "name": "test",
+      "email": "test@test.com"
+    },
+    {
+      "id": "c169",
+      "clubId": "5",
+      "eventid": "4",
+      "name": "test",
+      "email": "test@test.com"
     }
   ]
 }
