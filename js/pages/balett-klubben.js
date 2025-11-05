@@ -86,9 +86,9 @@ export default async function balettKlubben() {
   const getEventImagePath = (eventName) => {
     switch (eventName) {
       case 'Svansjön':
-        return 'img/balett/svansjon.jpg';
+        return 'img/balett/svansjon.png';
       case 'Nötknäpparen':
-        return 'img/balett/notknapparen.jpg';
+        return 'img/balett/notknapparen.png';
       default:
         return 'https://via.placeholder.com/300x200?text=Balett+Event'; // Fallback
     }
@@ -101,7 +101,7 @@ export default async function balettKlubben() {
         <p>${club.description}</p>
       </div>
       <div class="hero-image">
-        <img src="img/balett/balett-hero.jpg" alt="Elegant balettdansare på scen">
+        <img src="img/balett/balett-hero.png" alt="Elegant balettdansare på scen">
       </div>
     </section>
 
