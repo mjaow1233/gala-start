@@ -1,14 +1,44 @@
 {
   "clubs": [
     {
-      "id": "a37c",
-      "name": "Jazz-klubben",
-      "description": "Vår laid-back jazz-klubb där vi varje vecka får träffa nya spännande artister."
+      "id": "1",
+      "name": "Jazz-club",
+      "description": "En jazz klubb"
     },
     {
-      "id": "fg5i",
-      "name": "Metal-klubben",
-      "description": "Ylande metal som får dig att vilja erövra världen! Varje vecka med Tom som konferencier."
+      "id": "3",
+      "name": "Dj-club",
+      "description": "."
+    },
+    {
+      "id": "5",
+      "name": "Piano-club",
+      "description": "A place for piano enthusiasts to share and enjoy music."
+    },
+    {
+      "id": "7",
+      "name": "Hamze-club",
+      "description": "."
+    },
+    {
+      "id": "9",
+      "name": "Dalmar-club",
+      "description": "."
+    },
+    {
+      "id": "54ee",
+      "name": "testklubb",
+      "description": "en testklubb för testning"
+    },
+    {
+      "id": "32e5",
+      "name": "testklubb3",
+      "description": "en tredje testklubb"
+    },
+    {
+      "id": "a25a",
+      "name": "okay",
+      "description": "det här är en okay klubb"
     },
     {
       "id": "b1e2",
@@ -18,25 +48,39 @@
   ],
   "events": [
     {
-      "id": "43ac",
+      "id": "2",
       "date": "2025-11-05 19:00",
-      "name": "New Orleans-bandet",
-      "description": "New Orleans-bandet spelar old school jazz från 30-talet, med sväng och klarinett.",
-      "clubId": "a37c"
+      "name": "jazz clubsfest",
+      "description": "test",
+      "clubId": "1"
     },
     {
-      "id": "57f3",
+      "id": "4",
       "date": "2025-11-06 21:00",
-      "name": "Mega Death-die",
-      "description": "En open stage för death-metal-rockare, 30 minuter per band, upp till 6 band per kväll. Stjäl inte varandras effektpedaler!",
-      "clubId": "fg5i"
+      "name": "testeventet",
+      "description": "",
+      "clubId": "5"
     },
     {
-      "id": "43ac",
+      "id": "6",
       "date": "2025-11-01 19:00",
-      "name": "Fusion-jazzarna Corea's Disciples",
-      "description": "Cool fusion-jazz med en massa dim-ackord.",
-      "clubId": "a37c"
+      "name": ".",
+      "description": "",
+      "clubId": "5"
+    },
+    {
+      "id": "8",
+      "date": ".",
+      "name": ".",
+      "description": ".",
+      "clubId": "7"
+    },
+    {
+      "id": "10",
+      "date": ".",
+      "name": ".",
+      "description": ".",
+      "clubId": "9"
     },
     {
       "id": "c3d4",
@@ -51,6 +95,36 @@
       "name": "Nötknäpparen",
       "description": "En magisk julföreställning för hela familjen.",
       "clubId": "b1e2"
+    }
+  ],
+  "visitor": [
+    {
+      "eventid": "10",
+      "name": ".",
+      "clubId": "9",
+      "email": "a@a.com",
+      "id": "99f2"
+    },
+    {
+      "id": "a314",
+      "clubId": "7",
+      "eventid": "8",
+      "name": "fewfew",
+      "email": "test@test.com"
+    },
+    {
+      "id": "706b",
+      "clubId": "5",
+      "eventid": "4",
+      "name": "test",
+      "email": "test@test.com"
+    },
+    {
+      "id": "c169",
+      "clubId": "5",
+      "eventid": "4",
+      "name": "test",
+      "email": "test@test.com"
     }
   ]
 }
