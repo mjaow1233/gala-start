@@ -4,3 +4,6 @@ node_modules
 
 # Ingore stupid hidden MacOS file that has no use to us
 .DS_Store
+# Ignore .vscode settings file
+.vscode/settings.json
+# Ignore json-server database file
