@@ -7,20 +7,15 @@ import createEvent from './pages/create-event.js';
 import clubs from './pages/clubs.js';
 import bookEvent from './pages/book-event.js';
 import balettKlubben from './pages/balett-klubben.js';
-import pianoClub from './pages/piano-club.js';
-import djClub from './pages/dj-club.js';
-
 
 const isAdmin = true;
 
 const Clubmenu = {
   "jazz-klubben": { label: 'Jazz-klubben', function: jazzClub },
   "hamze-klubben": { label: 'hamze-klubben', function: hamzeClub },
-  "piano-klubben": { label: 'Piano-klubben', function: pianoClub },
-  "dj-klubben": { label: 'DJ-klubben', function: djClub },
   "balett-klubben": { label: 'Balettklubben', function: balettKlubben }
-};
 
+};
 const menu = {
   "start": { label: 'Start', function: start },
   "about": { label: 'About', function: about },
@@ -29,10 +24,9 @@ const menu = {
   "bookEvent": { label: 'Book Event', function: bookEvent },
   "createEvent": { label: 'Create Event', function: createEvent, isAdminPage: true },
   
-  ...Clubmenu 
 };
-
 function createMenu() {
+
   return Object.entries(menu)
     .map(
       ([urlHash, { label, isAdminPage }]) => {
@@ -40,6 +34,7 @@ function createMenu() {
           return `
       <a href="#${urlHash}">${label}</a>
     `
+
         }
         else if (!isAdminPage) {
           return `
@@ -52,24 +47,25 @@ function createMenu() {
 }
 
 async function loadPageContent() {
+  // if no hash redirect to #start
   if (location.hash === "") {
     location.replace("#start");
   }
+  // add a class on body so that we can style differnt pages differently
   document.body.setAttribute("class", location.hash.slice(1));
-
-  const page = menu[location.hash.slice(1)];
-  if (!page) {
-    document.querySelector("main").innerHTML = "<h2>404 - Sidan finns inte</h2>";
-    console.warn(`Ingen funktion hittades för hash: ${location.hash}`);
-    return;
-  }
-
-  const functionToRun = page.function;
+  // get the correct function to run depending on location.hash
+  const functionToRun = menu[location.hash.slice(1)].function;
+  // run the function and expect it return a html string
   const html = await functionToRun();
+  // replace the contents of the main element
   document.querySelector("main").innerHTML = html;
 }
 
-window.onhashchange = loadPageContent;
+// call loadPageContent once on page load
 loadPageContent();
 
+// and then on every hash change of the url/location
+window.onhashchange = loadPageContent;
+
+// create the menu and display it
 document.querySelector("header nav").innerHTML = createMenu();
