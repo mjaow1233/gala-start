@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "Jazz-club",
-      "description": "."
+      "description": "En jazz klubb"
     },
     {
       "id": "3",
@@ -24,14 +24,24 @@
       "id": "9",
       "name": "Dalmar-club",
       "description": "."
+    },
+    {
+      "id": "54ee",
+      "name": "testklubb",
+      "description": "en testklubb för testning"
+    },
+    {
+      "id": "32e5",
+      "name": "testklubb3",
+      "description": "en tredje testklubb"
     }
   ],
   "events": [
     {
       "id": "2",
       "date": "2025-11-05 19:00",
-      "name": ".",
-      "description": ".",
+      "name": "jazz clubsfest",
+      "description": "test",
       "clubId": "1"
     },
     {
@@ -62,7 +72,5 @@
       "description": ".",
       "clubId": "9"
     }
-
-
   ]
 }

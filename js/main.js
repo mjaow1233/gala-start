@@ -3,24 +3,40 @@ import jazzClub from './pages/jazz-club.js';
 import hamzeClub from './pages/hamze-club.js';
 import about from './pages/about.js';
 import events from './pages/events.js';
-
+import createClub from './pages/create-club.js';
+import clubs from './pages/clubs.js';
+const isAdmin = true;
 
 const Clubmenu = {
   "jazz-klubben": { label: 'Jazz-klubben', function: jazzClub },
   "hamze-klubben": { label: 'hamze-klubben', function: hamzeClub }
+
+
 };
 const menu = {
   "start": { label: 'Start', function: start },
   "about": { label: 'About', function: about },
-  "events": { label: 'Events', function: events }
+  "events": { label: 'Events', function: events },
+  "clubs": { label: 'Clubs', function: clubs },
+  "create-club": { label: 'Skapa en klubb', function: createClub, isAdminPage: true }
 };
 function createMenu() {
 
   return Object.entries(menu)
     .map(
-      ([urlHash, { label }]) => `
+      ([urlHash, { label, isAdminPage }]) => {
+        if (isAdminPage && isAdmin) {
+          return `
       <a href="#${urlHash}">${label}</a>
     `
+
+        }
+        else if (!isAdminPage) {
+          return `
+      <a href="#${urlHash}">${label}</a>
+    `
+        }
+      }
     )
     .join("");
 }
