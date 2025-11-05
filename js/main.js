@@ -1,10 +1,14 @@
 import start from './pages/start.js';
 import balettKlubben from './pages/balett-klubben.js';
+import about from './pages/about.js';
+import events from './pages/events.js';
 // Our menu: label to display in menu and 
 // function to run on menu choice
 const menu = {
   "start": { label: 'Start', function: start },
-  "balett-klubben": { label: 'Balettklubben', function: balettKlubben }
+  "balett-klubben": { label: 'Balettklubben', function: balettKlubben },
+  "about": { label: 'About', function: about },
+  "events": { label: 'Events', function: events },
 };
 
 function createMenu() {

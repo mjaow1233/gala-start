@@ -1,6 +1,8 @@
 @import './setup-box-sizing.css';
 @import '../pages/start-page.css'; 
 @import '../pages/balett-klubben.css';
+@import '../pages/about.css';
+@import '../pages/events.css';
 body {
   margin: 20px
 }
