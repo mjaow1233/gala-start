@@ -6,6 +6,8 @@ import events from './pages/events.js';
 import createEvent from './pages/create-event.js';
 import clubs from './pages/clubs.js';
 import bookEvent from './pages/book-event.js';
+
+
 const isAdmin = true;
 
 const Clubmenu = {
@@ -19,8 +21,9 @@ const menu = {
   "about": { label: 'About', function: about },
   "events": { label: 'Events', function: events },
   "clubs": { label: 'Clubs', function: clubs },
-  "createEvent": { label: 'Create Event', function: createEvent },
-  "create-club": { label: 'Skapa en klubb', function: createClub, isAdminPage: true }
+  "bookEvent": { label: 'Book Event', function: bookEvent },
+  "createEvent": { label: 'Create Event', function: createEvent, isAdminPage: true },
+
 };
 function createMenu() {
 
