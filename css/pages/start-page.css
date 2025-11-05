@@ -9,7 +9,7 @@ header {
   align-items: center;
   width: 90%;
   padding: 2rem 0;
-  border-bottom: 1px solid #ddd;
+  border: 2px solid #000000;
   background-color: #a5a5a5;
   box-sizing: border-box;
   margin: 0 auto;
@@ -21,7 +21,7 @@ header {
   height: auto;
   display: block;
   margin: auto;
-  border: 1px solid #ccc;
+
 }
 
 

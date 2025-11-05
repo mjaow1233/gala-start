@@ -1,7 +1,10 @@
 @import './setup-box-sizing.css';
 @import '../pages/start-page.css';
 @import '../pages/jazz-club.css';
-@import '../pages/metal-club.css';
+@import '../pages/about.css';
+@import '../pages/create-club.css';
+@import '../pages/clubs.css';
+
 
 body {
   margin: 20px;
