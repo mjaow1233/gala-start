@@ -10,15 +10,15 @@ export default async function start() {
 
     <section class="upcoming">
       <h2>Upcoming Events</h2>
-      <div class="events-grid">
+      <div class="grid">
         ${eventsHtml}
       </div>
     </section>
 
     <section class="clubs">
-      <a href="#jazz-klubben" class="club-btn">Jazz</a>
-      <a href="#piano-klubben" class="club-btn">Piano Club</a>
-      <a href="#add-club" class="club-btn add">+ Your Club</a>
+      <a href="#jazz-klubben" class="club-button">Jazz</a>
+      <a href="#piano-klubben" class="club-button">Piano Club</a>
+      <a href="#add-club" class="club-button">+ Your Club</a>
     </section>
   `;
 }

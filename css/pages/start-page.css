@@ -43,7 +43,7 @@ header nav a {
   margin-bottom: 1rem;
 }
 
-.events-grid {
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 1rem;
@@ -66,20 +66,16 @@ header nav a {
   justify-content: center;
 }
 
-.club-btn {
+.club-button {
   padding: 0.5rem 1rem;
   border: 1px solid #333;
   border-radius: 4px;
   text-decoration: none;
   color: #333;
-  font-weight: 500;
+
   background: white;
   min-width: 100px;
   text-align: center;
-}
-
-.club-btn.add {
-  font-weight: 600;
 }
 
 
