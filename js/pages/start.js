@@ -28,7 +28,7 @@ import { getClubInfoAndEvents } from "../utils/club-info-and-events.js";
 
 export default async function start() {
   // Hämta all event-DATA (inte HTML)
-  const allEvents = await getClubInfoAndEvents();
+  const allEvents = await clubInfoAndEvents();
 
   // Bygg HTML-strängen manuellt
   const eventsHtml = allEvents
