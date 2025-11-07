@@ -14,8 +14,8 @@ export default async function start() {
         ${eventsHtml}
       </div>
     </section>
-
-    <section class="clublinks">
+    <section>
+    
     </section>
   `;
 }
