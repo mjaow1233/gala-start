@@ -21,28 +21,8 @@
       "description": "."
     },
     {
-      "id": "9",
-      "name": "Dalmar-club",
-      "description": "."
-    },
-    {
-      "id": "54ee",
-      "name": "testklubb",
-      "description": "en testklubb för testning"
-    },
-    {
-      "id": "32e5",
-      "name": "testklubb3",
-      "description": "en tredje testklubb"
-    },
-    {
-      "id": "a25a",
-      "name": "okay",
-      "description": "det här är en okay klubb"
-    },
-    {
       "id": "b1e2",
-      "name": "Balettklubben",
+      "name": "Ballet Club",
       "description": "Klassisk och modern balett på den stora scenen. Upplev magin i rörelse och musik."
     }
   ],
@@ -67,20 +47,6 @@
       "name": "90's Night",
       "description": "",
       "clubId": "3"
-    },
-    {
-      "id": "8",
-      "date": ".",
-      "name": ".",
-      "description": ".",
-      "clubId": "7"
-    },
-    {
-      "id": "10",
-      "date": ".",
-      "name": ".",
-      "description": ".",
-      "clubId": "9"
     },
     {
       "id": "c3d4",
