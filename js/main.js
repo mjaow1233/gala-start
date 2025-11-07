@@ -1,6 +1,6 @@
 import start from './pages/start.js';
 import jazzClub from './pages/jazz-club.js';
-import hamzeClub from './pages/hamze-club.js';
+import operaClub from './pages/opera-club.js';
 import djClub from './pages/dj-club.js';
 import pianoClub from './pages/piano-club.js';
 import about from './pages/about.js';
@@ -10,45 +10,58 @@ import clubs from './pages/clubs.js';
 import bookEvent from './pages/book-event.js';
 import balletClub from './pages/ballet-club.js';
 
-const isAdmin = true;
+const isAdmin = false;
 
 const Clubmenu = {
-  "jazz-klubben": { label: 'Jazz-klubben', function: jazzClub },
-  "hamze-klubben": { label: 'Hamze-klubben', function: hamzeClub },
-  "dj-klubben": { label: 'DJ-klubben', function: djClub },
-  "piano-klubben": { label: 'Piano-klubben', function: pianoClub },
-  "ballet-klubben": { label: 'Balet-club', function: balletClub }
-
+  "jazzClub": { label: 'Jazz Club', function: jazzClub },
+  "balletClub": { label: 'Ballet Club', function: balletClub },
+  "pianoClub": { label: 'Piano Club', function: pianoClub },
+  "djClub": { label: 'Dj Club', function: djClub },
+  "operaClub": { label: 'Opera Club', function: operaClub },
 
 };
+
 const menu = {
   "start": { label: 'Start', function: start },
   "about": { label: 'About', function: about },
   "events": { label: 'Events', function: events },
-  "clubs": { label: 'Clubs', function: clubs },
   "bookEvent": { label: 'Book Event', function: bookEvent },
   "createEvent": { label: 'Create Event', function: createEvent, isAdminPage: true },
 };
 function createMenu() {
-
-  return Object.entries(menu)
-    .map(
-      ([urlHash, { label, isAdminPage }]) => {
-        if (isAdminPage && isAdmin) {
-          return `
-      <a href="#${urlHash}" class="${isAdminPage ? 'admin' : ''}">${label}</a>
-    `
-
-        }
-        else if (!isAdminPage) {
-          return `
-      <a href="#${urlHash}">${label}</a>
-    `
-        }
+  const links = Object.entries(menu)
+    .map(([urlHash, { label, isAdminPage }]) => {
+      if (isAdminPage && isAdmin) {
+        return `<a href="#${urlHash}" class="admin">${label}</a>`;
+      } else if (!isAdminPage) {
+        return `<a href="#${urlHash}">${label}</a>`;
       }
-    )
+    })
+    .join("");
+
+  //gjorde en constant för att hämta clubs till menyn
+  const clubsDropdown = `
+  <div class="dropdown">
+    <a href="#clubsMenu" class="dropdown">Clubs</a>
+    <div class="dropdown-content">
+      ${createClubMenu()}
+    </div>
+  </div>
+`;
+
+  return links + clubsDropdown;
+}
+
+function createClubMenu() {
+  return Object.entries(Clubmenu)
+    .map(([urlHash, { label }]) => `
+      <a href="#${urlHash}" class="club-link">${label}</a>
+    `)
     .join("");
 }
+
+
+
 //creates a new object that includes both your main pages and your club pages
 const allRoutes = { ...menu, ...Clubmenu };
 
@@ -89,3 +102,4 @@ window.onhashchange = loadPageContent;
 
 // create the menu and display it
 document.querySelector("header nav").innerHTML = createMenu();
+document.querySelector(".club-menu").innerHTML = createClubMenu();
