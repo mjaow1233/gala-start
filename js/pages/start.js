@@ -15,7 +15,7 @@ export default async function start() {
       </div>
     </section>
 
-    <section class="clubs">
+    <section class="clublinks">
       <a href="#jazz-klubben" class="club-button">Jazz</a>
       <a href="#piano-klubben" class="club-button">Piano Club</a>
       <a href="#add-club" class="club-button">+ Your Club</a>
