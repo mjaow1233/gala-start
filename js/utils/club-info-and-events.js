@@ -1,15 +1,24 @@
 export default async function clubInfoAndEvents() {
-  const res = await fetch("http://localhost:3000/events");
+let url = "http://localhost:3000/events";
+if (clubId) {
+    url += `?clubId=${clubId}`;
+  }
+
+  const res = await fetch(url);
   const events = await res.json();
 
-  return events
+  events.sort((a, b) => new Date(a.date) - new Date(b.date));
 
-    //Bästa ide för att det inte ska bli för många events: sortera efter datum och visa senaste fyra eventsen.
+  return events
     .map(
       ({ date, name, description }) => `
       <article class="event-card">
         <h3>${name}</h3>
-        <p class="date">${new Date(date).toLocaleDateString()}</p>
+        <p class="date">${new Date(date).toLocaleDateString("sv-SE", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })}</p>
         <p>${description}</p>
       </article>
     `
