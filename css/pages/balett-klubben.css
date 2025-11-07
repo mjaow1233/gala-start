@@ -175,7 +175,7 @@ body.balett-klubben .about-ballet p {
   }
 
   body.balett-klubben .events-grid {
-    grid-template-columns: 1fr; /* En kolumn på små skärmar */
+    grid-template-columns: 1fr;
   }
 
   body.balett-klubben .event-card {
