@@ -21,6 +21,11 @@
       "description": "."
     },
     {
+      "id": "9",
+      "name": "Dalmar-club",
+      "description": "."
+    },
+    {
       "id": "54ee",
       "name": "testklubb",
       "description": "en testklubb för testning"
@@ -37,7 +42,7 @@
     },
     {
       "id": "b1e2",
-      "name": "balletclub",
+      "name": "Balettklubben",
       "description": "Klassisk och modern balett på den stora scenen. Upplev magin i rörelse och musik."
     }
   ],
@@ -59,9 +64,9 @@
     {
       "id": "6",
       "date": "2025-11-01 19:00",
-      "name": ".",
+      "name": "90's Night",
       "description": "",
-      "clubId": "5"
+      "clubId": "3"
     },
     {
       "id": "8",

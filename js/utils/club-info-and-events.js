@@ -3,6 +3,8 @@ export default async function clubInfoAndEvents() {
   const events = await res.json();
 
   return events
+
+    //Bästa ide för att det inte ska bli för många events: sortera efter datum och visa senaste fyra eventsen.
     .map(
       ({ date, name, description }) => `
       <article class="event-card">
