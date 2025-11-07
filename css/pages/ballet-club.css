@@ -1,13 +1,13 @@
-body.balett-klubben {
+body.ballet-club {
   background-color: #FDF5E6; /* Old Lace */
   color: #5D4037; /* Mörkbrun text */
   font-family: 'Georgia', serif; 
   line-height: 1.6;
 }
 
-body.balett-klubben h1,
-body.balett-klubben h2,
-body.balett-klubben h3 {
+body.ballet-club h1,
+body.ballet-club h2,
+body.ballet-club h3 {
   font-family: 'Playfair Display', serif;
   color: #333;
 }
@@ -17,7 +17,7 @@ body.balett-klubben h3 {
 
 
 /* Hero-sektionen (toppbild med text) */
-body.balett-klubben .club-hero {
+body.ballet-club .club-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,52 +26,52 @@ body.balett-klubben .club-hero {
   overflow: hidden; 
 }
 
-body.balett-klubben .club-hero .hero-image img {
+body.ballet-club .club-hero .hero-image img {
   width: 100%;
   max-height: 400px;
   object-fit: cover; 
   filter: grayscale(20%) brightness(90%);
 }
 
-body.balett-klubben .club-hero .hero-content {
+body.ballet-club .club-hero .hero-content {
   padding: 20px 40px;
   border-radius: 8px;
   max-width: 80%; 
   margin-bottom: 20px; 
 }
-body.balett-klubben .club-hero h1 {
+body.ballet-club .club-hero h1 {
   font-size: 3em;
   margin-bottom: 10px;
   color: #6A057F; 
   text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-body.balett-klubben .club-hero p {
+body.ballet-club .club-hero p {
   font-size: 1.2em;
   color: #5D4037;
 }
 
 /*Kommande Evenemang sektionen*/
-body.balett-klubben .upcoming-events {
+body.ballet-club .upcoming-events {
   margin: 40px auto;
   max-width: 1200px;
   padding: 0 20px;
 }
 
-body.balett-klubben .upcoming-events h2 {
+body.ballet-club .upcoming-events h2 {
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 30px;
   color: #6A057F;
 }
 
-body.balett-klubben .events-grid {
+body.ballet-club .events-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
 
-body.balett-klubben .event-card {
+body.ballet-club .event-card {
   background-color: #FFF; 
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -81,45 +81,45 @@ body.balett-klubben .event-card {
   transition: transform 0.2s ease-in-out;
 }
 
-body.balett-klubben .event-card:hover {
+body.ballet-club .event-card:hover {
   transform: translateY(-5px);
 }
 
-body.balett-klubben .event-image img {
+body.ballet-club .event-image img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   display: block;
 }
 
-body.balett-klubben .event-details {
+body.ballet-club .event-details {
   padding: 20px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 
-body.balett-klubben .event-details h3 {
+body.ballet-club .event-details h3 {
   font-size: 1.8em;
   margin-top: 0;
   margin-bottom: 10px;
   color: #6A057F;
 }
 
-body.balett-klubben .event-date {
+body.ballet-club .event-date {
   font-style: italic;
   color: #888;
   margin-bottom: 15px;
 }
 
-body.balett-klubben .event-details p {
+body.ballet-club .event-details p {
   font-size: 1em;
   color: #5D4037;
   flex-grow: 1; 
 }
 
 /* Bokningsknapp */
-body.balett-klubben .book-ticket-button {
+body.ballet-club .book-ticket-button {
   background-color: #D2691E; 
   color: white;
   border: none;
@@ -132,13 +132,13 @@ body.balett-klubben .book-ticket-button {
   align-self: flex-start;
 }
 
-body.balett-klubben .book-ticket-button:hover {
+body.ballet-club .book-ticket-button:hover {
   background-color: #A0522D;
 }
 
 
 /* Om Balett sektionen */
-body.balett-klubben .about-ballet {
+body.ballet-club .about-ballet {
   background-color: #FFF;
   margin: 40px auto;
   max-width: 1000px;
@@ -148,13 +148,13 @@ body.balett-klubben .about-ballet {
   text-align: center;
 }
 
-body.balett-klubben .about-ballet h2 {
+body.ballet-club .about-ballet h2 {
   font-size: 2.2em;
   margin-bottom: 20px;
   color: #6A057F;
 }
 
-body.balett-klubben .about-ballet p {
+body.ballet-club .about-ballet p {
   font-size: 1.1em;
   color: #5D4037;
   margin-bottom: 15px;
@@ -162,41 +162,41 @@ body.balett-klubben .about-ballet p {
 }
 
 @media (max-width: 768px) {
-  body.balett-klubben .club-hero h1 {
+  body.ballet-club .club-hero h1 {
     font-size: 2.5em;
   }
 
-  body.balett-klubben .club-hero p {
+  body.ballet-club .club-hero p {
     font-size: 1em;
   }
 
-  body.balett-klubben .hero-content {
+  body.ballet-club .hero-content {
     padding: 15px 20px;
   }
 
-  body.balett-klubben .events-grid {
+  body.ballet-club .events-grid {
     grid-template-columns: 1fr;
   }
 
-  body.balett-klubben .event-card {
+  body.ballet-club .event-card {
     flex-direction: row; 
     text-align: left;
   }
 
-  body.balett-klubben .event-image {
+  body.ballet-club .event-image {
     flex: 0 0 120px; 
     height: auto;
   }
 
-  body.balett-klubben .event-image img {
+  body.ballet-club .event-image img {
     height: 100%;
   }
 
-  body.balett-klubben .event-details {
+  body.ballet-club .event-details {
     padding: 15px;
   }
   
-  body.balett-klubben .book-ticket-button {
+  body.ballet-club .book-ticket-button {
     align-self: flex-end;
   }
 }
