@@ -67,7 +67,7 @@ export default async function balettKlubben() {
   
   return html;
 }
-*/
+*/ /*Old code*/
 import clubInfoAndEvents from "../utils/club-info-and-events.js";
 
 export default async function balletclub() {
