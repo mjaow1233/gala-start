@@ -21,11 +21,6 @@
       "description": "."
     },
     {
-      "id": "9",
-      "name": "Dalmar-club",
-      "description": "."
-    },
-    {
       "id": "54ee",
       "name": "testklubb",
       "description": "en testklubb för testning"
@@ -42,7 +37,7 @@
     },
     {
       "id": "b1e2",
-      "name": "Balettklubben",
+      "name": "balletclub",
       "description": "Klassisk och modern balett på den stora scenen. Upplev magin i rörelse och musik."
     }
   ],
