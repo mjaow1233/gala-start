@@ -9,7 +9,7 @@ import events from './pages/events.js';
 import createEvent from './pages/create-event.js';
 import clubs from './pages/clubs.js';
 import bookEvent from './pages/book-event.js';
-
+import balettKlubben from './pages/balett-klubben.js';
 
 const isAdmin = true;
 
@@ -29,7 +29,6 @@ const menu = {
   "clubs": { label: 'Clubs', function: clubs },
   "bookEvent": { label: 'Book Event', function: bookEvent },
   "createEvent": { label: 'Create Event', function: createEvent, isAdminPage: true },
-
 };
 function createMenu() {
 
