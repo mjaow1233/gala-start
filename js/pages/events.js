@@ -19,6 +19,7 @@ export default async function events() {
       <a href="#jazz-klubben" class="club-btn">Jazz</a>
       <a href="#piano-klubben" class="club-btn">Piano Club</a>
       <a href="#dj-klubben" class="club-btn">DJ Club</a>
+      <a href="#ballet-club" class="club-button">Ballet Club</a>
       <a href="#add-club" class="club-btn add">+ Your Club</a>
     </section>
   `;
