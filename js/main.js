@@ -17,7 +17,7 @@ const Clubmenu = {
   "hamze-klubben": { label: 'Hamze-klubben', function: hamzeClub },
   "dj-klubben": { label: 'DJ-klubben', function: djClub },
   "piano-klubben": { label: 'Piano-klubben', function: pianoClub },
-  "ballet-klubben": { label: 'Balet-club', function: balletClub }
+  "ballet-club": { label: 'Ballet-club', function: balletClub }
 
 
 };
@@ -60,25 +60,27 @@ async function loadPageContent() {
   }
   // add a class on body so that we can style differnt pages differently
   document.body.setAttribute("class", location.hash.slice(1));
-  // get the correct function to run depending on location.hash
-  const functionToRun = allRoutes[location.hash.slice(1)].function;
-  // run the function and expect it return a html string
+  
+  const route = allRoutes[location.hash.slice(1)];
 
-  if (!functionToRun) {
+  // get the correct function to run depending on location.hash
+  if (!route) {
     document.querySelector("main").innerHTML = "<p>Page not found.</p>";
     return;
   }
+  const functionToRun = route.function;
 
   const html = await functionToRun();
   // replace the contents of the main element
   document.querySelector("main").innerHTML = html;
-
-  if (location.hash === "#bookEvent") {
+  // if the page is bookEvent or createEvent, call updateEventDropdown after a short delay
+  if (location.hash === "#bookEvent" || location.hash === "#createEvent") {
     setTimeout(() => {
-      updateEventDropdown();
+      if (typeof updateEventDropdown === 'function') {
+        updateEventDropdown();
+      }
     }, 0);
   }
-
 }
 
 // call loadPageContent once on page load

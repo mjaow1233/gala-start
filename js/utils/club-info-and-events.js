@@ -1,4 +1,4 @@
-export default async function clubInfoAndEvents() {
+export default async function clubInfoAndEvents(clubId) {
 let url = "http://localhost:3000/events";
 if (clubId) {
     url += `?clubId=${clubId}`;
