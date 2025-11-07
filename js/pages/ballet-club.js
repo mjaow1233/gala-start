@@ -1,30 +1,41 @@
-/*
-import { getClubInfoAndEvents, getClubDetails } from "../utils/club-info-and-events.js";
 function addBookingListeners() {
   document.querySelectorAll('.book-ticket-button').forEach(button => {
     button.addEventListener('click', (e) => {
       const eventId = e.target.dataset.eventId;
-      alert(`Du försöker boka biljett till evenemang ${eventId}. Bokningssystemet är under utveckling.`);
+
+      location.hash = "#bookEvent"; 
+
+      alert(`Omdirigerar för att boka biljett till evenemang ${eventId}.`);
     });
   });
 }
 
-export default async function balettKlubben() {
-  const clubId = 'b1e2'; // Balettklubb ID
 
-  const club = await getClubDetails(clubId);
-  const events = await getClubInfoAndEvents(clubId);
+const getEventImagePath = (eventName) => {
+  switch (eventName) {
+    case 'Svansjön':
 
-  const getEventImagePath = (eventName) => {
-    switch (eventName) {
-      case 'Svansjön':
-        return 'img/balett/svansjon.png';
-      case 'Nötknäpparen':
-        return 'img/balett/notknapparen.png';
-      default:
-        return 'https://via.placeholder.com/300x200?text=Balett+Event'; 
-    }
-  };
+      return 'images/balett/svansjon.png';
+    case 'Nötknäpparen':
+
+      return 'images/balett/notknapparen.png';
+    default:
+      return 'https.via.placeholder.com/300x200?text=Balett+Event';
+  }
+};
+
+export default async function balletClub() {
+  const clubId = 'b1e2'; 
+
+
+  const clubRes = await fetch(`http://localhost:3000/clubs/${clubId}`);
+  const club = await clubRes.json();
+
+  const eventsRes = await fetch(`http://localhost:3000/events?clubId=${clubId}`);
+  const events = await eventsRes.json();
+  
+ 
+  events.sort((a, b) => new Date(a.date) - new Date(b.date));
 
   let html = `
     <section class="club-hero">
@@ -33,7 +44,7 @@ export default async function balettKlubben() {
         <p>${club.description}</p>
       </div>
       <div class="hero-image">
-        <img src="img/balett/balett-hero.png" alt="Elegant balettdansare på scen">
+        <img src="images/balett/balett-hero.png" alt="Elegant balettdansare på scen">
       </div>
     </section>
 
@@ -45,7 +56,7 @@ export default async function balettKlubben() {
             <div class="event-image">
               <img src="${getEventImagePath(event.name)}" alt="Bild för ${event.name}">
             </div>
-            <div class="event-details">
+            <div classevent-details">
               <h3>${event.name}</h3>
               <p class="event-date">${new Date(event.date).toLocaleDateString('sv-SE', { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' })}</p>
               <p>${event.description}</p>
@@ -66,10 +77,4 @@ export default async function balettKlubben() {
   setTimeout(addBookingListeners, 0); 
   
   return html;
-}
-*/
-import clubInfoAndEvents from "../utils/club-info-and-events.js";
-
-export default async function balletClub() {
-  return clubInfoAndEvents("b1e2");
 }
