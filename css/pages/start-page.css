@@ -1,6 +1,7 @@
 body.start {
   background: #f8f8f8;
   color: #222;
+  margin: 0;
 }
 
 header {
@@ -10,9 +11,10 @@ header {
   width: 90%;
   padding: 2rem 0;
   border: 2px solid #000000;
-  background-color: #a5a5a5;
+  background-color: rgb(96, 88, 13);
   box-sizing: border-box;
   margin: 0 auto;
+  margin-top: 10px;
 }
 
 
@@ -27,15 +29,39 @@ header {
 
 
 header nav a {
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
   display: inline-block;
   text-decoration: none;
-  padding: 2rem;
+  padding: 0.4rem 0.8rem;
   text-align: center;
+  font-size: 1.2rem;
+  padding-top: 2vh;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+  line-height: 1;
+  vertical-align: middle;
 }
 
+header nav {
+  background-color: #021c11;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 1rem 0;
+}
+header nav a:hover {
+  background-color: beige;
+  color:#000000
+}
 
 .upcoming {
-  padding: 1rem 5%;
+  padding: 0.5rem 5%;
+  
 }
 
 .upcoming h2 {
@@ -51,7 +77,7 @@ header nav a {
 
 .event-card {
   background: white;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   padding: 1rem;
   border-radius: 6px;
   text-align: center;

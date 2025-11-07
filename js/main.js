@@ -1,6 +1,9 @@
 import start from './pages/start.js';
 import jazzClub from './pages/jazz-club.js';
 import hamzeClub from './pages/hamze-club.js';
+import djClub from './pages/dj-club.js';
+import pianoClub from './pages/piano-club.js';
+import balletClub from './pages/ballet-club.js';
 import about from './pages/about.js';
 import events from './pages/events.js';
 import createEvent from './pages/create-event.js';
@@ -12,7 +15,10 @@ const isAdmin = true;
 
 const Clubmenu = {
   "jazz-klubben": { label: 'Jazz-klubben', function: jazzClub },
-  "hamze-klubben": { label: 'hamze-klubben', function: hamzeClub }
+  "hamze-klubben": { label: 'Hamze-klubben', function: hamzeClub },
+  "dj-klubben": { label: 'DJ-klubben', function: djClub },
+  "piano-klubben": { label: 'Piano-klubben', function: pianoClub },
+  "ballet-klubben": { label: 'Ballet-klubben', function: balletClub }
 
 
 };
@@ -32,7 +38,7 @@ function createMenu() {
       ([urlHash, { label, isAdminPage }]) => {
         if (isAdminPage && isAdmin) {
           return `
-      <a href="#${urlHash}">${label}</a>
+      <a href="#${urlHash}" class="${isAdminPage ? 'admin' : ''}">${label}</a>
     `
 
         }
@@ -45,20 +51,36 @@ function createMenu() {
     )
     .join("");
 }
+//creates a new object that includes both your main pages and your club pages
+const allRoutes = { ...menu, ...Clubmenu };
 
 async function loadPageContent() {
   // if no hash redirect to #start
   if (location.hash === "") {
     location.replace("#start");
+    return;
   }
   // add a class on body so that we can style differnt pages differently
   document.body.setAttribute("class", location.hash.slice(1));
   // get the correct function to run depending on location.hash
-  const functionToRun = menu[location.hash.slice(1)].function;
+  const functionToRun = allRoutes[location.hash.slice(1)].function;
   // run the function and expect it return a html string
+  
+  if (!functionToRun) {
+    document.querySelector("main").innerHTML = "<p>Page not found.</p>";
+    return;
+  }
+  
   const html = await functionToRun();
   // replace the contents of the main element
   document.querySelector("main").innerHTML = html;
+
+  if (location.hash === "#bookEvent") {
+  setTimeout(() => {
+    updateEventDropdown();
+  }, 0);
+}
+
 }
 
 // call loadPageContent once on page load

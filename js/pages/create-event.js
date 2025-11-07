@@ -1,5 +1,4 @@
 export default async function createEvent() {
-
   const clubs = await (await fetch("http://localhost:3000/clubs")).json();
   const events = await (await fetch("http://localhost:3000/events")).json();
   //hämta informationen från json filen.
@@ -13,9 +12,13 @@ export default async function createEvent() {
 
       <label>Select Club</label>
       <select name="clubId" id="club-select" required>
-        ${clubs.map(club => `
+        ${clubs
+          .map(
+            (club) => `
           <option value="${club.id}">${club.name}</option>
-        `).join('')}
+        `
+          )
+          .join("")}
       </select>
 
       <label>Select Event</label>
@@ -32,20 +35,27 @@ export default async function createEvent() {
   `;
 }
 
-
 //gjorde en funktion för att uppdatera dropdown beroende på clubID
 function updateEventDropdown() {
-  const clubId = document.querySelector("#club-select").value;
+  const clubSelect = document.querySelector("#club-select");
   const eventSelect = document.querySelector("#event-select");
+  //ser till att elementer finns
+  if (!clubSelect || !eventSelect || !window.allEvents) return;
 
-  const filteredEvents = window.allEvents.filter(event => event.clubId === clubId);
+  const clubId = clubSelect.value;
 
-  eventSelect.innerHTML = filteredEvents.map(event => `
+  const filteredEvents = window.allEvents.filter(
+    (event) => String(event.clubId) === String(clubId)
+  );
+
+  eventSelect.innerHTML = filteredEvents
+    .map(
+      (event) => `
     <option value="${event.id}">${event.name}</option>
-  `).join('');
+  `
+    )
+    .join("");
 }
-
-
 
 async function submitEventForm(event) {
   event.preventDefault();
@@ -60,13 +70,17 @@ async function submitEventForm(event) {
   await fetch("http://localhost:3000/visitor", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ clubId, eventid: eventId, name, email })
+    body: JSON.stringify({ clubId, eventid: eventId, name, email }),
   });
 
+  const selectedEvent = window.allEvents.find(
+    (e) => String(e.id) === String(eventId)
+  );
+  const eventName = selectedEvent?.name || "your event";
+
+  form.innerHTML = `<p>Thanks, ${name}! Your booking for "${eventName}" is confirmed.</p>`;
 
 }
-
-
 
 window.addEventListener("change", (e) => {
   if (e.target.id === "club-select") updateEventDropdown();
@@ -75,10 +89,3 @@ window.addEventListener("change", (e) => {
 window.addEventListener("submit", (e) => {
   if (e.target.id === "event-form") submitEventForm(e);
 });
-
-
-
-setTimeout(updateEventDropdown, 0);
-
-
-

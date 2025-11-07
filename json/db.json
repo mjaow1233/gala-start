@@ -59,9 +59,9 @@
     {
       "id": "6",
       "date": "2025-11-01 19:00",
-      "name": ".",
+      "name": "90's Night",
       "description": "",
-      "clubId": "5"
+      "clubId": "3"
     },
     {
       "id": "8",
@@ -106,6 +106,20 @@
       "eventid": "4",
       "name": "test",
       "email": "test@test.com"
+    },
+    {
+      "id": "28a2",
+      "clubId": "3",
+      "eventid": "6",
+      "name": "kalle olof",
+      "email": "kalleolof4@gmail.com"
+    },
+    {
+      "id": "9a24",
+      "clubId": "3",
+      "eventid": "6",
+      "name": "kalle olof",
+      "email": "kalleolof4@gmail.com"
     }
   ]
 }

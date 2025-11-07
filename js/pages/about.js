@@ -18,6 +18,7 @@ export default async function about() {
     <section class="clubs">
       <a href="#jazz-klubben" class="club-btn">Jazz</a>
       <a href="#piano-klubben" class="club-btn">Piano Club</a>
+      <a href="#dj-klubben" class="club-button">DJ Club</a>
       <a href="#add-club" class="club-btn add">+ Your Club</a>
     </section>
   `;

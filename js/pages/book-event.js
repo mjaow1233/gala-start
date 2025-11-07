@@ -30,19 +30,28 @@ export default async function bookEvent() {
       <button type="submit">Book</button>
     </form>
   `;
+
+return html;
 }
 
+  
 
 //gjorde en funktion för att uppdatera dropdown beroende på clubID
 function updateEventDropdown() {
-  const clubId = document.querySelector("#club-select").value;
+  const clubSelect = document.querySelector("#club-select");
   const eventSelect = document.querySelector("#event-select");
 
-  const filteredEvents = window.allEvents.filter(event => event.clubId === clubId);
+  if (!clubSelect || !eventSelect || !window.allEvents) return;
 
-  eventSelect.innerHTML = filteredEvents.map(event => `
+  const clubId = clubSelect.value;
+  
+  const filteredEvents = window.allEvents.filter(event => String(event.clubId) === String(clubId));
+
+  eventSelect.innerHTML = filteredEvents.length
+  ? filteredEvents.map(event => `
     <option value="${event.id}">${event.name}</option>
-  `).join('');
+  `).join('')
+  : `<option disabled>No events available</option>`;
 }
 
 
@@ -63,22 +72,25 @@ async function submitEventForm(event) {
     body: JSON.stringify({ clubId, eventid: eventId, name, email })
   });
 
+const selectedEvent = window.allEvents.find(
+  e => String(e.id) === String(eventId)
+);
+const eventName = selectedEvent?.name || "your event";
 
+form.innerHTML = `<p>Thanks, ${name}! Your booking for "${eventName}" is confirmed.</p>`;
 }
 
 
 
-window.addEventListener("change", (e) => {
+window.addEventListener("change", e => {
   if (e.target.id === "club-select") updateEventDropdown();
 });
 
-window.addEventListener("submit", (e) => {
+window.addEventListener("submit", e => {
   if (e.target.id === "event-form") submitEventForm(e);
 });
 
 
-
-setTimeout(updateEventDropdown, 0);
 
 
 
