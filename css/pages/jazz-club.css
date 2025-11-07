@@ -1,0 +1,18 @@
+body.jazzClub {
+  background: #000000;
+  color: #222;
+  margin: 0;
+}
+
+header.jazzClub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 2rem 0;
+  border: 2px solid #000000;
+  background-color: rgb(0, 0, 0);
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 10px;
+}
