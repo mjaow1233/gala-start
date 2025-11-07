@@ -1,4 +1,4 @@
-body.start {
+body {
   background: #f8f8f8;
   color: #222;
   margin: 0;
@@ -54,14 +54,15 @@ header nav {
   gap: 10px;
   padding-bottom: 1rem 0;
 }
+
 header nav a:hover {
   background-color: beige;
-  color:#000000
+  color: #000000
 }
 
 .upcoming {
   padding: 0.5rem 5%;
-  
+
 }
 
 .upcoming h2 {
@@ -84,7 +85,7 @@ header nav a:hover {
 }
 
 
-.clubs {
+.clublinks {
   margin: 2rem 5%;
   display: flex;
   flex-wrap: wrap;
