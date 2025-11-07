@@ -17,12 +17,12 @@
     },
     {
       "id": "7",
-      "name": "Hamze-club",
+      "name": "Opera-club",
       "description": "."
     },
     {
       "id": "9",
-      "name": "Dalmar-club",
+      "name": "ballet-club",
       "description": "."
     },
     {
@@ -39,11 +39,6 @@
       "id": "a25a",
       "name": "okay",
       "description": "det här är en okay klubb"
-    },
-    {
-      "id": "b1e2",
-      "name": "Balettklubben",
-      "description": "Klassisk och modern balett på den stora scenen. Upplev magin i rörelse och musik."
     }
   ],
   "events": [

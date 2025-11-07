@@ -49,6 +49,27 @@ function createMenu() {
     )
     .join("");
 }
+
+function createClubMenu() {
+
+  return Object.entries(menu)
+    .map(
+      ([urlHash, { label, isAdminPage }]) => {
+        if (isAdminPage && isAdmin) {
+          return `
+      <a href="#${urlHash}" class="${isAdminPage ? 'admin' : ''}">${label}</a>
+    `
+
+        }
+        else if (!isAdminPage) {
+          return `
+      <a href="#${urlHash}">${label}</a>
+    `
+        }
+      }
+    )
+    .join("");
+}
 //creates a new object that includes both your main pages and your club pages
 const allRoutes = { ...menu, ...Clubmenu };
 
@@ -89,3 +110,4 @@ window.onhashchange = loadPageContent;
 
 // create the menu and display it
 document.querySelector("header nav").innerHTML = createMenu();
+document.querySelector("div clublinks").innerHTML = createClubMenu();

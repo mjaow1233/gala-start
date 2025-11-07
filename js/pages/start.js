@@ -16,9 +16,6 @@ export default async function start() {
     </section>
 
     <section class="clublinks">
-      <a href="#jazz-klubben" class="club-button">Jazz</a>
-      <a href="#piano-klubben" class="club-button">Piano Club</a>
-      <a href="#add-club" class="club-button">+ Your Club</a>
     </section>
   `;
 }
