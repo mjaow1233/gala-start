@@ -6,14 +6,14 @@ import events from './pages/events.js';
 import createEvent from './pages/create-event.js';
 import clubs from './pages/clubs.js';
 import bookEvent from './pages/book-event.js';
-import balettKlubben from './pages/balett-klubben.js';
+import balettKlubben from './pages/ballet-club.js';
 
 const isAdmin = true;
 
 const Clubmenu = {
   "jazz-klubben": { label: 'Jazz-klubben', function: jazzClub },
   "hamze-klubben": { label: 'hamze-klubben', function: hamzeClub },
-  "balett-klubben": { label: 'Balettklubben', function: balettKlubben }
+  "ballet-club": { label: 'ballet-club', function: balletclub }
 
 };
 const menu = {
