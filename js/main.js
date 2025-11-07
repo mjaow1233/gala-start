@@ -42,7 +42,7 @@ function createMenu() {
   //gjorde en constant för att hämta clubs till menyn
   const clubsDropdown = `
   <div class="dropdown">
-    <a href="#clubs" class="dropdown">Clubs</a>
+    <a href="#clubsMenu" class="dropdown">Clubs</a>
     <div class="dropdown-content">
       ${createClubMenu()}
     </div>
@@ -103,4 +103,3 @@ window.onhashchange = loadPageContent;
 // create the menu and display it
 document.querySelector("header nav").innerHTML = createMenu();
 document.querySelector(".club-menu").innerHTML = createClubMenu();
-document.querySelector(".dropdown-content").innerHTML = createClubMenu();

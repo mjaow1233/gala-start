@@ -1,9 +1,11 @@
 import clubInfoAndEvents from "../utils/club-info-and-events.js";
 
 export default async function jazzClub() {
+  const eventsHtml = await clubInfoAndEvents();
+
   return `
     <section class="hero">
-      <img src="images/jazz.png" alt="HeroImage">
+      <img src="images/jazz2.png" alt="HeroImage">
     </section>
 
     <section class="upcoming">
@@ -11,9 +13,6 @@ export default async function jazzClub() {
       <div class="grid">
         ${eventsHtml}
       </div>
-    </section>
-
-   
     </section>
   `;
 }
