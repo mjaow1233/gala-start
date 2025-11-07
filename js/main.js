@@ -3,13 +3,12 @@ import jazzClub from './pages/jazz-club.js';
 import hamzeClub from './pages/hamze-club.js';
 import djClub from './pages/dj-club.js';
 import pianoClub from './pages/piano-club.js';
-import balletClub from './pages/ballet-club.js';
 import about from './pages/about.js';
 import events from './pages/events.js';
 import createEvent from './pages/create-event.js';
 import clubs from './pages/clubs.js';
 import bookEvent from './pages/book-event.js';
-import balettKlubben from './pages/balett-klubben.js';
+import balletClub from './pages/ballet-club.js';
 
 const isAdmin = true;
 
@@ -18,7 +17,7 @@ const Clubmenu = {
   "hamze-klubben": { label: 'Hamze-klubben', function: hamzeClub },
   "dj-klubben": { label: 'DJ-klubben', function: djClub },
   "piano-klubben": { label: 'Piano-klubben', function: pianoClub },
-  "ballet-klubben": { label: 'Ballet-klubben', function: balletClub }
+  "ballet-klubben": { label: 'Balet-club', function: balletClub }
 
 
 };
@@ -64,21 +63,21 @@ async function loadPageContent() {
   // get the correct function to run depending on location.hash
   const functionToRun = allRoutes[location.hash.slice(1)].function;
   // run the function and expect it return a html string
-  
+
   if (!functionToRun) {
     document.querySelector("main").innerHTML = "<p>Page not found.</p>";
     return;
   }
-  
+
   const html = await functionToRun();
   // replace the contents of the main element
   document.querySelector("main").innerHTML = html;
 
   if (location.hash === "#bookEvent") {
-  setTimeout(() => {
-    updateEventDropdown();
-  }, 0);
-}
+    setTimeout(() => {
+      updateEventDropdown();
+    }, 0);
+  }
 
 }
 
