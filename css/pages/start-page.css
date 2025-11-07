@@ -88,10 +88,7 @@ header nav .dropdown-toggle {
   transition: background-color 0.3s ease;
 }
 
-header nav .dropdown-toggle:hover {
-  background-color: beige;
-  color: #000000;
-}
+
 
 header nav .dropdown-content {
   display: none;
@@ -114,7 +111,6 @@ header nav .dropdown-content a {
   padding: 0.5rem 1rem;
   text-decoration: none;
   display: block;
-  transition: background-color 0.3s ease;
 }
 
 header nav .dropdown-content a:hover {

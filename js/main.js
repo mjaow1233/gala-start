@@ -42,8 +42,8 @@ function createMenu() {
   //gjorde en constant för att hämta clubs till menyn
   const clubsDropdown = `
   <div class="dropdown">
-    <a href="#clubs" class="dropdown-toggle">Clubs</a>
-    <div class="dropdown">
+    <a href="#clubs" class="dropdown">Clubs</a>
+    <div class="dropdown-content">
       ${createClubMenu()}
     </div>
   </div>
