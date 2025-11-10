@@ -3,12 +3,12 @@
     {
       "id": "1",
       "name": "Jazz-club",
-      "description": "En jazz klubb"
+      "description": "En jazzklubb för livemusik och improvisation."
     },
     {
       "id": "3",
       "name": "Dj-club",
-      "description": "."
+      "description": "Klubb med fokus på DJ-kultur och dans."
     },
     {
       "id": "5",
@@ -18,108 +18,217 @@
     {
       "id": "7",
       "name": "Opera-club",
-      "description": "."
+      "description": "Upplev dramatisk sång och klassiska föreställningar."
     },
     {
       "id": "9",
-      "name": "ballet-club",
-      "description": "."
+      "name": "Ballet-club",
+      "description": "En klubb för dans och eleganta rörelser."
     },
     {
       "id": "54ee",
-      "name": "testklubb",
-      "description": "en testklubb för testning"
+      "name": "Testklubb",
+      "description": "En testklubb för experiment och nya idéer."
     },
     {
       "id": "32e5",
-      "name": "testklubb3",
-      "description": "en tredje testklubb"
+      "name": "Testklubb3",
+      "description": "En tredje testklubb för utveckling."
     },
     {
       "id": "a25a",
-      "name": "okay",
-      "description": "det här är en okay klubb"
+      "name": "Okay",
+      "description": "Det här är en helt okej klubb."
     }
   ],
   "events": [
     {
-      "id": "2",
+      "id": "a66b",
       "date": "2025-11-05 19:00",
-      "name": "jazz clubsfest",
-      "description": "test",
-      "clubId": "1"
+      "name": "Jazz Clubsfest",
+      "description": "En kväll med svängig jazz och gott sällskap.",
+      "clubId": "1",
+      "total": 50,
+      "votes": 12
+    },
+    {
+      "id": "6",
+      "date": "2025-11-08 21:00",
+      "name": "DJ Night Fever",
+      "description": "Elektroniska beats hela natten.",
+      "clubId": "3",
+      "total": 32,
+      "votes": 9
     },
     {
       "id": "4",
       "date": "2025-11-06 21:00",
-      "name": "testeventet",
-      "description": "",
-      "clubId": "5"
+      "name": "Piano Evenings",
+      "description": "A relaxed evening with live piano.",
+      "clubId": "5",
+      "total": 143,
+      "votes": 37
     },
     {
-      "id": "6",
-      "date": "2025-11-01 19:00",
-      "name": "90's Night",
-      "description": "",
-      "clubId": "3"
+      "id": "p1",
+      "date": "2025-11-10 19:00",
+      "name": "Morning Piano",
+      "description": "A calm morning with soft piano tunes.",
+      "clubId": "5",
+      "total": 46,
+      "votes": 11
     },
     {
-      "id": "8",
-      "date": ".",
-      "name": ".",
-      "description": ".",
-      "clubId": "7"
+      "id": "p2",
+      "date": "2025-11-12 18:00",
+      "name": "Piano 24/7",
+      "description": "Piano all day, drop in anytime.",
+      "clubId": "5",
+      "total": 86,
+      "votes": 21
     },
     {
-      "id": "10",
-      "date": ".",
-      "name": ".",
-      "description": ".",
-      "clubId": "9"
-    },
-    {
-      "id": "c3d4",
-      "date": "2025-11-10 20:00",
+      "id": "op1",
+      "date": "2025-11-15 20:00",
       "name": "Svansjön",
       "description": "En modern tolkning av den klassiska sagan.",
-      "clubId": "b1e2"
+      "clubId": "7",
+      "total": 40,
+      "votes": 10
     },
     {
-      "id": "e5f6",
+      "id": "op2",
       "date": "2025-11-17 19:00",
       "name": "Nötknäpparen",
       "description": "En magisk julföreställning för hela familjen.",
-      "clubId": "b1e2"
+      "clubId": "7",
+      "total": 55,
+      "votes": 11
+    },
+    {
+      "id": "b1",
+      "date": "2025-11-20 19:30",
+      "name": "Ballet Gala",
+      "description": "En kväll fylld med klassisk balett.",
+      "clubId": "9",
+      "total": 48,
+      "votes": 12
+    },
+    {
+      "id": "b2",
+      "date": "2025-11-25 18:30",
+      "name": "Nutcracker Highlights",
+      "description": "Kända scener ur Nötknäpparen.",
+      "clubId": "9",
+      "total": 33,
+      "votes": 8
     }
   ],
   "visitor": [
     {
-      "eventid": "10",
-      "name": ".",
+      "id": "99f2",
       "clubId": "9",
-      "email": "a@a.com",
-      "id": "99f2"
+      "eventid": "b1",
+      "name": "Anna",
+      "email": "anna@example.com"
     },
     {
       "id": "a314",
       "clubId": "7",
-      "eventid": "8",
-      "name": "fewfew",
-      "email": "test@test.com"
+      "eventid": "op1",
+      "name": "Kalle",
+      "email": "kalle@test.com"
     },
     {
       "id": "706b",
       "clubId": "5",
       "eventid": "4",
-      "name": "test",
-      "email": "test@test.com"
+      "name": "Lisa",
+      "email": "lisa@music.com"
     },
     {
-      "id": "c169",
+      "id": "9038",
+      "clubId": "5",
+      "eventid": "p2",
+      "name": "Felixtest",
+      "email": "test@hotmail.com"
+    },
+    {
+      "id": "9a16",
+      "clubId": "5",
+      "eventid": "p2",
+      "name": "Felixtest",
+      "email": "test@hotmail.com"
+    },
+    {
+      "id": "2604",
+      "clubId": "5",
+      "eventid": "p2",
+      "name": "Felixtest",
+      "email": "test22@hotmail.com"
+    },
+    {
+      "id": "6372",
+      "clubId": "5",
+      "eventid": "p2",
+      "name": "Felixtest",
+      "email": "test22@hotmail.com"
+    },
+    {
+      "id": "0e09",
       "clubId": "5",
       "eventid": "4",
-      "name": "test",
-      "email": "test@test.com"
+      "name": "Feli11",
+      "email": "fesdfsd@hotmail.com"
+    },
+    {
+      "id": "630e",
+      "clubId": "5",
+      "eventid": "4",
+      "name": "Feli11",
+      "email": "fesdfsd@hotmail.com"
+    },
+    {
+      "id": "784b",
+      "clubId": "5",
+      "eventid": "p2",
+      "name": "kfff",
+      "email": "feld@hotmail.com"
+    },
+    {
+      "id": "d644",
+      "clubId": "5",
+      "eventid": "p2",
+      "name": "kfff",
+      "email": "feld@hotmail.com"
+    },
+    {
+      "id": "5f72",
+      "clubId": "5",
+      "eventid": "p2",
+      "name": "feeelix",
+      "email": "gdgdf@hotmail.com"
+    },
+    {
+      "id": "1dfc",
+      "clubId": "5",
+      "eventid": "p2",
+      "name": "feeelix",
+      "email": "gdgdf@hotmail.com"
+    },
+    {
+      "id": "d3d5",
+      "clubId": "5",
+      "eventid": "p1",
+      "name": "ffeelc",
+      "email": "felfs@hotmail.com"
+    },
+    {
+      "id": "31e8",
+      "clubId": "5",
+      "eventid": "p1",
+      "name": "ffeelc",
+      "email": "felfs@hotmail.com"
     }
   ]
 }

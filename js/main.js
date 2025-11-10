@@ -1,32 +1,35 @@
-import start from './pages/start.js';
-import jazzClub from './pages/jazz-club.js';
-import operaClub from './pages/opera-club.js';
-import djClub from './pages/dj-club.js';
-import pianoClub from './pages/piano-club.js';
-import about from './pages/about.js';
-import events from './pages/events.js';
-import createEvent from './pages/create-event.js';
-import clubs from './pages/clubs.js';
-import bookEvent from './pages/book-event.js';
-import balletClub from './pages/ballet-club.js';
-
+import start from "./pages/start.js";
+import jazzClub from "./pages/jazz-club.js";
+import operaClub from "./pages/opera-club.js";
+import djClub from "./pages/dj-club.js";
+import pianoClub from "./pages/piano-club.js";
+import about from "./pages/about.js";
+import events from "./pages/events.js";
+import createEvent from "./pages/create-event.js";
+import clubs from "./pages/clubs.js";
+import bookEvent from "./pages/book-event.js";
+import balletClub from "./pages/ballet-club.js";
+import { starSystem } from "./utils/ratings.js";
 const isAdmin = false;
 
 const Clubmenu = {
-  "jazzClub": { label: 'Jazz Club', function: jazzClub },
-  "balletClub": { label: 'Ballet Club', function: balletClub },
-  "pianoClub": { label: 'Piano Club', function: pianoClub },
-  "djClub": { label: 'Dj Club', function: djClub },
-  "operaClub": { label: 'Opera Club', function: operaClub },
-
+  jazzClub: { label: "Jazz Club", function: jazzClub },
+  balletClub: { label: "Ballet Club", function: balletClub },
+  pianoClub: { label: "Piano Club", function: pianoClub },
+  djClub: { label: "Dj Club", function: djClub },
+  operaClub: { label: "Opera Club", function: operaClub },
 };
 
 const menu = {
-  "start": { label: 'Start', function: start },
-  "about": { label: 'About', function: about },
-  "events": { label: 'Events', function: events },
-  "bookEvent": { label: 'Book Event', function: bookEvent },
-  "createEvent": { label: 'Create Event', function: createEvent, isAdminPage: true },
+  start: { label: "Start", function: start },
+  about: { label: "About", function: about },
+  events: { label: "Events", function: events },
+  bookEvent: { label: "Book Event", function: bookEvent },
+  createEvent: {
+    label: "Create Event",
+    function: createEvent,
+    isAdminPage: true,
+  },
 };
 function createMenu() {
   const links = Object.entries(menu)
@@ -54,13 +57,13 @@ function createMenu() {
 
 function createClubMenu() {
   return Object.entries(Clubmenu)
-    .map(([urlHash, { label }]) => `
+    .map(
+      ([urlHash, { label }]) => `
       <a href="#${urlHash}" class="club-link">${label}</a>
-    `)
+    `
+    )
     .join("");
 }
-
-
 
 //creates a new object that includes both your main pages and your club pages
 const allRoutes = { ...menu, ...Clubmenu };
@@ -86,12 +89,19 @@ async function loadPageContent() {
   // replace the contents of the main element
   document.querySelector("main").innerHTML = html;
 
+  setTimeout(() => {
+  const stars = document.querySelectorAll(".star");
+  if (stars.length > 0) {
+    starSystem();
+  }
+}, 100);
+
+
   if (location.hash === "#bookEvent") {
     setTimeout(() => {
       updateEventDropdown();
     }, 0);
   }
-
 }
 
 // call loadPageContent once on page load
