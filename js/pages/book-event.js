@@ -80,7 +80,13 @@ const selectedEvent = window.allEvents.find(
   
   console.log("debug test");
 
-form.innerHTML = `<p>Thanks, ${name}! Your booking for "${eventName}" is confirmed.</p>`;
+  form.innerHTML = `<p>Thanks, ${name}! Your booking for "${eventName}" is confirmed.</p>`;
+
+  window.onhashchange = null;
+  
+  setTimeout(() => {
+  window.location.reload();
+}, 3000);
 }
 
 
