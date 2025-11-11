@@ -21,24 +21,9 @@
       "description": "."
     },
     {
-      "id": "9",
-      "name": "ballet-club",
-      "description": "."
-    },
-    {
-      "id": "54ee",
-      "name": "testklubb",
-      "description": "en testklubb för testning"
-    },
-    {
-      "id": "32e5",
-      "name": "testklubb3",
-      "description": "en tredje testklubb"
-    },
-    {
-      "id": "a25a",
-      "name": "okay",
-      "description": "det här är en okay klubb"
+      "id": "b1e2",
+      "name": "Ballet Club",
+      "description": "Classical and modern ballet on the big stage. Experience the magic in movement and music."
     }
   ],
   "events": [
@@ -66,15 +51,15 @@
     {
       "id": "c3d4",
       "date": "2025-11-10 20:00",
-      "name": "Svansjön",
-      "description": "En modern tolkning av den klassiska sagan.",
+      "name": "Swan Lake",
+      "description": "A modern interpretation of the classic saga.",
       "clubId": "b1e2"
     },
     {
       "id": "e5f6",
       "date": "2025-11-17 19:00",
-      "name": "Nötknäpparen",
-      "description": "A modern interpretation of the classic saga.",
+      "name": "The Nutcracker",
+      "description": "A magical Christmas performance for the whole family.",
       "clubId": "b1e2"
     }
   ],
