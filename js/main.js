@@ -1,6 +1,5 @@
 import start from './pages/start.js';
 import jazzClub from './pages/jazz-club.js';
-import hamzeClub from './pages/hamze-club.js';
 import djClub from './pages/dj-club.js';
 import pianoClub from './pages/piano-club.js';
 import about from './pages/about.js';
@@ -14,7 +13,6 @@ const isAdmin = true;
 
 const Clubmenu = {
   "jazz-klubben": { label: 'Jazz-klubben', function: jazzClub },
-  "hamze-klubben": { label: 'Hamze-klubben', function: hamzeClub },
   "dj-klubben": { label: 'DJ-klubben', function: djClub },
   "piano-klubben": { label: 'Piano-klubben', function: pianoClub },
   "ballet-club": { label: 'Ballet-club', function: balletClub }
