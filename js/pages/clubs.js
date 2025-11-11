@@ -6,6 +6,7 @@ export default async function clubs() {
     "1": "jazz-klubben",
     "3": "dj-klubben",
     "5": "piano-klubben",
+    "7": "opera-klubben",
     "b1e2": "ballet-club"
   };
 
