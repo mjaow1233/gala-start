@@ -10,7 +10,7 @@ import clubs from "./pages/clubs.js";
 import bookEvent from "./pages/book-event.js";
 import balletClub from "./pages/ballet-club.js";
 import { starSystem } from "./utils/ratings.js";
-const isAdmin = false;
+const isAdmin = true;
 
 const Clubmenu = {
   jazzClub: { label: "Jazz Club", function: jazzClub },
@@ -113,3 +113,5 @@ window.onhashchange = loadPageContent;
 // create the menu and display it
 document.querySelector("header nav").innerHTML = createMenu();
 document.querySelector(".club-menu").innerHTML = createClubMenu();
+
+

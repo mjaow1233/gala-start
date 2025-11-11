@@ -18,34 +18,4 @@ a {
   align-content: center;
 }
 
-/* --- STJÄRNOR --- */
-.stars {
-  display: flex;
-  justify-content: center;
-  gap: 6px;
-  margin-top: 10px;
-  cursor: pointer;
-}
 
-.star {
-  font-size: 2rem; /* ⭐ gör stjärnorna större */
-  color: #ccc;
-  transition: color 0.2s;
-}
-
-.star:hover,
-.star.selected {
-  color: gold; /* färg när vald */
-}
-
-/* --- TEXT --- */
-.event-card h3 {
-  text-align: center;
-  font-size: 1.3rem;
-}
-
-.event-card p {
-  text-align: center;
-  font-size: 1rem;
-  color: #333;
-}

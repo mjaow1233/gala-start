@@ -8,9 +8,8 @@ export default async function pianoClub() {
   const ratingHTML = await clubRatings("5");
 
   return `
-    <section class="club-info">
-      <h2>Piano Club 🎹</h2>
-      <p>Welcome to the Piano Club!</p>
+    <section class="hero">
+      <div class="hero-content">
     </section>
 
     <section class="event-info">

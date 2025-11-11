@@ -12,7 +12,7 @@ export default async function clubRatings(clubId) {
       }
 
       return `
-    <article class="event-card" data-event-id="${event.id}">
+    <article class="rateclub-event" data-event-id="${event.id}">
     <h3>${event.name}</h3>
     <p>Average Rating: ${average} stars (${event.votes} votes)</p>
 
@@ -36,28 +36,30 @@ export function starSystem() {
   stars.forEach((star) => {
     star.addEventListener("click", async () => {
       const value = Number(star.dataset.value);
-      const eventCard = star.closest(".event-card");
-      const allStars = eventCard.querySelectorAll(".star");
+      const rateClub = star.closest(".rateclub-event");
+      const allStars = rateClub.querySelectorAll(".star");
       allStars.forEach((s) => s.classList.remove("selected"));
       for (let i = 0; i < value; i++) {
         allStars[i].classList.add("selected");
       }
-      
 
       const eventData = await (
-        await fetch(`http://localhost:3000/events/${eventCard.dataset.eventId}`)
+        await fetch(`http://localhost:3000/events/${rateClub.dataset.eventId}`)
       ).json();
 
       eventData.total = eventData.total + value;
       eventData.votes = eventData.votes + 1;
 
-      /*saves the votes to the json server */
-
-      await fetch(`http://localhost:3000/events/${eventCard.dataset.eventId}`, {
+      await fetch(`http://localhost:3000/events/${rateClub.dataset.eventId}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(eventData),
       });
+      const newAverage = Math.round(eventData.total / eventData.votes);
+      const ratingText = rateClub.querySelector("p");
+      if (ratingText) {
+        ratingText.textContent = `Average Rating: ${newAverage} stars (${eventData.votes} votes)`;
+      }
 
       alert(`Your vote ${value} has been submitted to "${eventData.name}"!`);
     });
