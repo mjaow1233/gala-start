@@ -8,7 +8,7 @@ import events from './pages/events.js';
 import createEvent from './pages/create-event.js';
 import clubs from './pages/clubs.js';
 import bookEvent from './pages/book-event.js';
-import ballet-club from './pages/ballet-club.js';
+import balletClub from './pages/ballet-club.js';
 
 const isAdmin = false;
 
@@ -18,6 +18,7 @@ const Clubmenu = {
   "pianoClub": { label: 'Piano Club', function: pianoClub },
   "djClub": { label: 'Dj Club', function: djClub },
   "operaClub": { label: 'Opera Club', function: operaClub },
+  "clubs": { label: 'Clubs', function: clubs }
 
 };
 
@@ -42,7 +43,7 @@ function createMenu() {
   //gjorde en constant för att hämta clubs till menyn
   const clubsDropdown = `
   <div class="dropdown">
-    <a href="#clubsMenu" class="dropdown">Clubs</a>
+    <a href="#clubs" class="dropdown">Clubs</a>
     <div class="dropdown-content">
       ${createClubMenu()}
     </div>
@@ -73,7 +74,7 @@ async function loadPageContent() {
   }
   // add a class on body so that we can style differnt pages differently
   document.body.setAttribute("class", location.hash.slice(1));
-  
+
   const route = allRoutes[location.hash.slice(1)];
 
   // get the correct function to run depending on location.hash
