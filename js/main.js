@@ -12,11 +12,13 @@ import balletClub from "./pages/ballet-club.js";
 const isAdmin = false;
 
 const Clubmenu = {
-  jazzClub: { label: "Jazz Club", function: jazzClub },
-  balletClub: { label: "Ballet Club", function: balletClub },
-  pianoClub: { label: "Piano Club", function: pianoClub },
-  djClub: { label: "Dj Club", function: djClub },
-  operaClub: { label: "Opera Club", function: operaClub },
+  "jazzClub": { label: 'Jazz Club', function: jazzClub },
+  "ballet-club": { label: 'Ballet Club', function: balletClub },
+  "pianoClub": { label: 'Piano Club', function: pianoClub },
+  "djClub": { label: 'Dj Club', function: djClub },
+  "operaClub": { label: 'Opera Club', function: operaClub },
+  "clubs": { label: 'Clubs', function: clubs }
+
 };
 
 const menu = {
@@ -44,7 +46,7 @@ function createMenu() {
   //gjorde en constant för att hämta clubs till menyn
   const clubsDropdown = `
   <div class="dropdown">
-    <a href="#clubsMenu" class="dropdown">Clubs</a>
+    <a href="#clubs" class="dropdown">Clubs</a>
     <div class="dropdown-content">
       ${createClubMenu()}
     </div>
@@ -75,22 +77,25 @@ async function loadPageContent() {
   }
   // add a class on body so that we can style differnt pages differently
   document.body.setAttribute("class", location.hash.slice(1));
-  // get the correct function to run depending on location.hash
-  const functionToRun = allRoutes[location.hash.slice(1)].function;
-  // run the function and expect it return a html string
 
-  if (!functionToRun) {
+  const route = allRoutes[location.hash.slice(1)];
+
+  // get the correct function to run depending on location.hash
+  if (!route) {
     document.querySelector("main").innerHTML = "<p>Page not found.</p>";
     return;
   }
+  const functionToRun = route.function;
 
   const html = await functionToRun();
   // replace the contents of the main element
   document.querySelector("main").innerHTML = html;
-
-  if (location.hash === "#bookEvent") {
+  // if the page is bookEvent or createEvent, call updateEventDropdown after a short delay
+  if (location.hash === "#bookEvent" || location.hash === "#createEvent") {
     setTimeout(() => {
-      updateEventDropdown();
+      if (typeof updateEventDropdown === 'function') {
+        updateEventDropdown();
+      }
     }, 0);
   }
 }
