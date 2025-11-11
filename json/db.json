@@ -16,14 +16,9 @@
       "description": "A place for piano enthusiasts to share and enjoy music."
     },
     {
-      "id": "7",
-      "name": "Hamze-club",
-      "description": "."
-    },
-    {
       "id": "b1e2",
       "name": "Ballet Club",
-      "description": "Klassisk och modern balett på den stora scenen. Upplev magin i rörelse och musik."
+      "description": "Classical and modern ballet on the big stage. Experience the magic in movement and music."
     }
   ],
   "events": [
@@ -59,7 +54,7 @@
       "id": "e5f6",
       "date": "2025-11-17 19:00",
       "name": "Nötknäpparen",
-      "description": "En magisk julföreställning för hela familjen.",
+      "description": "A modern interpretation of the classic saga.",
       "clubId": "b1e2"
     }
   ],
