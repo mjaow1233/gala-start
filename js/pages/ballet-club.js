@@ -49,7 +49,7 @@ export default async function balletClub() {
     </section>
 
     <section class="upcoming-events">
-      <h2>Kommande Evenemang</h2>
+      <h2>Upcoming Events</h2>
       <div class="events-grid">
         ${events.map(event => `
           <article class="event-card">
@@ -68,9 +68,9 @@ export default async function balletClub() {
     </section>
 
     <section class="about-ballet">
-      <h2>Vårt uppdrag</h2>
-      <p>Balettklubben på Gala Emporium strävar efter att vara en mötesplats för alla som älskar dansens konstform. Vi presenterar ett brett spektrum av föreställningar, från klassiska mästerverk till nyskapande modern balett. Vår scen är en hyllning till gränslösa uttryck, precision och passion.</p>
-      <p>Vi tror att balett är för alla och arbetar för att göra den tillgänglig och inspirerande. Kom och upplev magin i varje rörelse!</p>
+      <h2>Our Mission</h2>
+      <p>The Ballet Club at Gala Emporium strives to be a meeting place for all who love the art of dance. We present a wide spectrum of performances, from classical masterpieces to innovative modern ballet. Our stage is a celebration of boundless expression, precision, and passion.</p>
+      <p>We believe ballet is for everyone and work to make it accessible and inspiring. Come and experience the magic in every movement!</p>
     </section>
   `;
 
