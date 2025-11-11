@@ -1,26 +1,31 @@
-import clubInfoAndEvents from "../utils/club-info-and-events.js";
-
 export default async function clubs() {
-  const eventsHtml = await clubInfoAndEvents();
+  const res = await fetch("http://localhost:3000/clubs");
+  const allClubs = await res.json();
+
+  const routeMap = {
+    "1": "jazz-klubben",
+    "3": "dj-klubben",
+    "5": "piano-klubben",
+    "b1e2": "ballet-club"
+  };
 
   return `
-    <section class="hero">
-      <img src="images/logo16.png" alt="HeroImage">
-    </section>
-
-    <section class="upcoming">
-      <h2>Upcoming Events</h2>
-      <div class="grid">
-        ${eventsHtml}
+    <section class="clubs-page-container">
+      <h1>Clubs</h1>
+      <p></p>
+      
+      <div class="clubs-page-grid-horizontal">
+        ${allClubs.map(club => `
+          <a href="#${routeMap[club.id] || 'start'}" 
+             class="club-card-horizontal" 
+             id="club-card-${club.id}"> 
+            
+            <div class="club-card-image"></div> <div class="club-card-text"> <h3>${club.name}</h3>
+              <p>${club.description}</p>
+            </div>
+          </a>
+        `).join('')}
       </div>
-    </section>
-
-    <section class="clubs">
-      <a href="#jazz-klubben" class="club-button">Jazz</a>
-      <a href="#piano-klubben" class="club-button">Piano Club</a>
-      <a href="#dj-klubben" class="club-button">DJ Club</a>
-      <a href="#ballet-club" class="club-button">Ballet Club</a>
-      <a href="#add-club" class="club-button">+ Your Club</a>
     </section>
   `;
 }
