@@ -22,7 +22,5 @@ export default async function about() {
       <a href="#ballet-club" class="club-button" id="ballet-btn">Ballet Club</a>
       <a href="#add-club" class="club-button" id="add-club-btn">+ Your Club</a>
     </section>
-
-
   `;
 }
