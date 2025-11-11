@@ -3,9 +3,10 @@ export default async function clubs() {
   const allClubs = await res.json();
 
   const routeMap = {
-    "1": "jazz-klubben",
-    "3": "dj-klubben",
-    "5": "piano-klubben",
+    "1": "jazzClub", 
+    "3": "djClub",
+    "5": "pianoClub", 
+    "7": "operaClub",
     "b1e2": "ballet-club"
   };
 

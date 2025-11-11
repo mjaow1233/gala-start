@@ -14,7 +14,7 @@ const isAdmin = false;
 
 const Clubmenu = {
   "jazzClub": { label: 'Jazz Club', function: jazzClub },
-  "balletClub": { label: 'Ballet Club', function: balletClub },
+  "ballet-club": { label: 'Ballet Club', function: balletClub },
   "pianoClub": { label: 'Piano Club', function: pianoClub },
   "djClub": { label: 'Dj Club', function: djClub },
   "operaClub": { label: 'Opera Club', function: operaClub },

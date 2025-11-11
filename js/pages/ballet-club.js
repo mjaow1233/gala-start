@@ -13,10 +13,10 @@ function addBookingListeners() {
 
 const getEventImagePath = (eventName) => {
   switch (eventName) {
-    case 'Svansjön':
+    case 'Swan Lake':
 
       return 'images/balett/svansjon.png';
-    case 'Nötknäpparen':
+    case 'The Nutcracker':
 
       return 'images/balett/notknapparen.png';
     default:

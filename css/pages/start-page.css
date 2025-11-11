@@ -135,7 +135,7 @@ header nav a:hover {
 }
 
 
-.clublinks {
+.clubs{
   margin: 2rem 5%;
   display: flex;
   flex-wrap: wrap;
@@ -193,6 +193,15 @@ footer {
 }
 #dj-btn:hover {
   background-color: #1a6d4e;
+}
+
+#opera-btn {
+  background-color: #6a0dad;
+  color: white;
+  border-color: #6a0dad;
+}
+#opera-btn:hover {
+  background-color: #8a2be2;
 }
 
 /* Balett-knappen*/
