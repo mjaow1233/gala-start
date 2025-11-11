@@ -11,7 +11,7 @@ export default async function clubs() {
 
   return `
     <section class="clubs-page-container">
-      <h1>Clubs</h1>
+      <h1>Clubs</h1>  
       <p></p>
       
       <div class="clubs-page-grid-horizontal">

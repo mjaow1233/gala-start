@@ -3,7 +3,7 @@ function addBookingListeners() {
     button.addEventListener('click', (e) => {
       const eventId = e.target.dataset.eventId;
 
-      location.hash = "#bookEvent"; 
+      location.hash = "#bookEvent";
 
       alert(`Omdirigerar för att boka biljett till evenemang ${eventId}.`);
     });
@@ -25,7 +25,7 @@ const getEventImagePath = (eventName) => {
 };
 
 export default async function balletClub() {
-  const clubId = 'b1e2'; 
+  const clubId = 'b1e2';
 
 
   const clubRes = await fetch(`http://localhost:3000/clubs/${clubId}`);
@@ -33,8 +33,8 @@ export default async function balletClub() {
 
   const eventsRes = await fetch(`http://localhost:3000/events?clubId=${clubId}`);
   const events = await eventsRes.json();
-  
- 
+
+
   events.sort((a, b) => new Date(a.date) - new Date(b.date));
 
   let html = `
@@ -74,7 +74,7 @@ export default async function balletClub() {
     </section>
   `;
 
-  setTimeout(addBookingListeners, 0); 
-  
+  setTimeout(addBookingListeners, 0);
+
   return html;
 }
