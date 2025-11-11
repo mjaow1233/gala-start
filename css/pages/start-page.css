@@ -40,8 +40,6 @@ header nav .dropdown-content a:hover {
 
 }
 
-
-
 header nav a {
   font-family: 'Times New Roman', Times, serif;
   color: white;
@@ -165,4 +163,49 @@ footer {
   text-align: center;
   padding: 1.5rem;
   font-size: 0.9rem;
+}
+
+/* Jazz-knappen */
+#jazz-btn {
+  background-color: #003366; 
+  color: white;
+  border-color: #003366;
+}
+#jazz-btn:hover {
+  background-color: #005599;
+}
+
+/* Piano-knappen */
+#piano-btn {
+  background-color: #333333; 
+  color: white;
+  border-color: #333333;
+}
+#piano-btn:hover {
+  background-color: #555555;
+}
+
+/* DJ-knappen */
+#dj-btn {
+  background-color: #114a34;
+  color: white;
+  border-color: #114a34;
+}
+#dj-btn:hover {
+  background-color: #1a6d4e;
+}
+
+/* Balett-knappen*/
+#ballet-btn {
+  background-color: #FDF5E6; 
+  color: #5D4037; 
+  border-color: #5D4037;
+}
+#ballet-btn:hover {
+  background-color: #efe8d9;
+}
+
+/* Add-club-knappen */
+#add-club-btn:hover {
+  background-color: #f0f0f0;
 }

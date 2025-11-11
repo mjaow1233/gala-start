@@ -5,7 +5,10 @@ export default async function bookEvent() {
   //hämta informationen från json filen.
 
   window.allEvents = events;
-
+  const clubIdsWithEvents = [...new Set(events.map(event => event.clubId))];
+  const clubsWithEvents = clubs.filter(club => 
+  clubIdsWithEvents.includes(club.id)
+  );
   return `
     <h2>Book an Event</h2>
 
@@ -13,7 +16,7 @@ export default async function bookEvent() {
 
       <label>Select Club</label>
       <select name="clubId" id="club-select" required>
-        ${clubs.map(club => `
+        ${clubsWithEvents.map(club => `
           <option value="${club.id}">${club.name}</option>
         `).join('')}
       </select>
