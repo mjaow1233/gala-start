@@ -26,8 +26,6 @@ header {
 
 }
 
-
-
 header nav a {
   font-family: 'Times New Roman', Times, serif;
   color: white;
@@ -113,7 +111,7 @@ footer {
   padding: 1.5rem;
   font-size: 0.9rem;
 }
-/* Här kan ni göra ändringar för att anpassa knapparnas utseende, Kolla på er id på start.js */
+
 /* Jazz-knappen */
 #jazz-btn {
   background-color: #003366; 
@@ -132,6 +130,16 @@ footer {
 }
 #piano-btn:hover {
   background-color: #555555;
+}
+
+/* DJ-knappen */
+#dj-btn {
+  background-color: #114a34;
+  color: white;
+  border-color: #114a34;
+}
+#dj-btn:hover {
+  background-color: #1a6d4e;
 }
 
 /* Balett-knappen*/
