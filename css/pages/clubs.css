@@ -95,6 +95,11 @@
   background-position: 40% 60%; 
 }
 
+#club-card-7 .club-card-image {
+  background-image: url('');
+  background-position: 50% 20%; 
+}
+
 /* Ballet Club */
 #club-card-b1e2 .club-card-image {
   background-image: url('../images/balett/balett-hero.png');
