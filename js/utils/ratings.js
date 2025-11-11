@@ -65,3 +65,22 @@ export function starSystem() {
     });
   });
 }
+window.addEventListener("hashchange", () => {
+  
+  setTimeout(() => {
+    const stars = document.querySelectorAll(".star");
+    if (stars.length > 0) {
+      starSystem();
+    }
+  }, 200);
+});
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    const stars = document.querySelectorAll(".star");
+    if (stars.length > 0) {
+      starSystem();
+    }
+  }, 200);
+});

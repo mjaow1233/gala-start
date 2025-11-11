@@ -1,7 +1,6 @@
 import clubEvents from "../utils/club-events.js";
 import clubRatings from "../utils/ratings.js";
 
-import { starSystem } from "../utils/ratings.js";
 
 export default async function pianoClub() {
   const infoHTML = await clubEvents("5");

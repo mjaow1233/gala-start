@@ -9,7 +9,6 @@ import createEvent from "./pages/create-event.js";
 import clubs from "./pages/clubs.js";
 import bookEvent from "./pages/book-event.js";
 import balletClub from "./pages/ballet-club.js";
-import { starSystem } from "./utils/ratings.js";
 const isAdmin = false;
 
 const Clubmenu = {
@@ -89,14 +88,6 @@ async function loadPageContent() {
   // replace the contents of the main element
   document.querySelector("main").innerHTML = html;
 
-  setTimeout(() => {
-  const stars = document.querySelectorAll(".star");
-  if (stars.length > 0) {
-    starSystem();
-  }
-}, 100);
-
-
   if (location.hash === "#bookEvent") {
     setTimeout(() => {
       updateEventDropdown();
@@ -113,5 +104,3 @@ window.onhashchange = loadPageContent;
 // create the menu and display it
 document.querySelector("header nav").innerHTML = createMenu();
 document.querySelector(".club-menu").innerHTML = createClubMenu();
-
-
