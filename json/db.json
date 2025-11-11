@@ -16,9 +16,29 @@
       "description": "A place for piano enthusiasts to share and enjoy music."
     },
     {
-      "id": "b1e2",
-      "name": "Ballet Club",
-      "description": "Classical and modern ballet on the big stage. Experience the magic in movement and music."
+      "id": "7",
+      "name": "Opera-club",
+      "description": "."
+    },
+    {
+      "id": "9",
+      "name": "ballet-club",
+      "description": "."
+    },
+    {
+      "id": "54ee",
+      "name": "testklubb",
+      "description": "en testklubb för testning"
+    },
+    {
+      "id": "32e5",
+      "name": "testklubb3",
+      "description": "en tredje testklubb"
+    },
+    {
+      "id": "a25a",
+      "name": "okay",
+      "description": "det här är en okay klubb"
     }
   ],
   "events": [
