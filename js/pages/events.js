@@ -15,7 +15,7 @@ export default async function events() {
       </div>
     </section>
 
-    <section class="clubs">
+    <section class="clublinks">
       <a href="#jazz-klubben" class="club-btn">Jazz</a>
       <a href="#piano-klubben" class="club-btn">Piano Club</a>
       <a href="#dj-klubben" class="club-btn">DJ Club</a>

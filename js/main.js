@@ -42,7 +42,7 @@ function createMenu() {
   //gjorde en constant för att hämta clubs till menyn
   const clubsDropdown = `
   <div class="dropdown">
-    <a href="#clubsMenu" class="dropdown">Clubs</a>
+    <a href="#clubs" class="dropdown">Clubs</a>
     <div class="dropdown-content">
       ${createClubMenu()}
     </div>
@@ -103,3 +103,24 @@ window.onhashchange = loadPageContent;
 // create the menu and display it
 document.querySelector("header nav").innerHTML = createMenu();
 document.querySelector(".club-menu").innerHTML = createClubMenu();
+
+//Video!
+if (location.hash === "#jazzClub") {
+  const video = document.getElementById('heroVideo');
+
+
+
+  video.addEventListener('timeupdate', () => {
+    seekBar.value = (video.currentTime / video.duration) * 100;
+  });
+
+  seekBar.addEventListener('input', () => {
+    video.currentTime = (seekBar.value / 100) * video.duration;
+  });
+
+
+  playBtn.addEventListener('click', () => {
+    if (video.paused) video.play();
+    else video.pause();
+  });
+}

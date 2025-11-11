@@ -5,7 +5,10 @@ export default async function jazzClub() {
 
   return `
     <section class="hero">
-      <img src="images/jazz2.png" alt="HeroImage">
+      <video autoplay muted loop playsinline class="hero-video" id="heroVideo">
+        <source src="videos/jazz.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </section>
 
     <section class="upcoming">

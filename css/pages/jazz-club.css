@@ -1,18 +1,84 @@
 body.jazzClub {
   background: #000000;
-  color: #222;
+  color: #7b7b7b;
   margin: 0;
 }
 
-header.jazzClub {
+body.jazzClub header {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 90%;
   padding: 2rem 0;
   border: 2px solid #000000;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 45);
   box-sizing: border-box;
   margin: 0 auto;
   margin-top: 10px;
+}
+
+body.jazzClub header nav {
+  background-color: rgb(0, 0, 44);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 1rem 0;
+}
+
+body.jazzClub header nav a {
+  font: 'Helvetica';
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 2vh;
+  background-color: transparent;
+  border-radius: 4px;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+body.jazzClub .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+body.jazzClub .hero-video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  aspect-ratio: 1536 / 624;
+}
+
+body.jazzClub header nav .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: transparent;
+  min-width: 160px;
+  border-radius: 2px;
+  z-index: 100;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+
+body.jazzClub header nav .dropdown-content a:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+
+body.jazzClub header nav a:hover {
+  background-color: rgb(255, 255, 255);
+  color: #000000
 }
