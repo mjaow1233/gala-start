@@ -40,7 +40,7 @@ return html;
   
 
 //gjorde en funktion för att uppdatera dropdown beroende på clubID
-function updateEventDropdown() {
+export function updateEventDropdown() {
   const clubSelect = document.querySelector("#club-select");
   const eventSelect = document.querySelector("#event-select");
 
@@ -62,7 +62,8 @@ function updateEventDropdown() {
 async function submitEventForm(event) {
   event.preventDefault();
 
-  const form = event.target;
+  
+  const form = document.querySelector("#event-form");
 
   const clubId = form.querySelector('[name="clubId"]').value;
   const eventId = form.querySelector('[name="eventId"]').value;
@@ -78,9 +79,17 @@ async function submitEventForm(event) {
 const selectedEvent = window.allEvents.find(
   e => String(e.id) === String(eventId)
 );
-const eventName = selectedEvent?.name || "your event";
+  const eventName = selectedEvent?.name || "your event";
+  
+  console.log("debug test");
 
-form.innerHTML = `<p>Thanks, ${name}! Your booking for "${eventName}" is confirmed.</p>`;
+  form.innerHTML = `<p>Thanks, ${name}! Your booking for "${eventName}" is confirmed.</p>`;
+
+  window.onhashchange = null;
+  
+  setTimeout(() => {
+  window.location.reload();
+}, 3000);
 }
 
 
@@ -91,6 +100,11 @@ window.addEventListener("change", e => {
 
 window.addEventListener("submit", e => {
   if (e.target.id === "event-form") submitEventForm(e);
+});
+
+window.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => updateEventDropdown(), 200);
+
 });
 
 

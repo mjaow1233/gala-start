@@ -1,0 +1,74 @@
+/* all kod rör bara pianoclub scopet*/
+body.pianoClub {
+  background-color: #0b0e03ec;
+  font-family: 'Times New Roman', Times, serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+body.pianoClub .hero {
+  width: 90%;
+  height: 65vh; 
+  background: url("../../images/piano-bg.png") center/cover no-repeat;
+  margin: auto;
+  border-radius: 5px;
+}
+
+
+body.pianoClub .rateclub-event {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 15px;
+  margin: 12px 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+body.pianoClub .rateclub-event h3 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+body.pianoClub .rateclub-event p {
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+}
+
+body.pianoClub .stars {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+body.pianoClub .star {
+  font-size: 2rem;
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+body.pianoClub .star:hover,
+body.pianoClub .star.selected {
+  color: gold;
+}
+body.pianoClub header {
+  width: 90%;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+
+body.pianoClub .event-info,
+body.pianoClub .event-ratings {
+  width: 90%;
+  margin: 0 auto;
+}
+
+body.pianoClub .event-info > h3,
+body.pianoClub .event-ratings > h3 {
+  text-align: center;
+  margin: 20px 0;
+  color: #ee0404;
+}

@@ -35,11 +35,22 @@
       "clubId": "1"
     },
     {
-      "id": "4",
+      "id": "a44b",
       "date": "2025-11-06 21:00",
-      "name": "testeventet",
-      "description": "",
-      "clubId": "5"
+      "name": "Piano Evening",
+      "description": "A evening dedicated to piano performances and enthusiasts.",
+      "clubId": "5",
+      "total": 210,
+      "votes": 51
+    },
+    {
+      "id": "a45b",
+      "date": "2025-11-06 21:00",
+      "name": "Piano Morning Show",
+      "description": "A morning dedicated to piano performances and enthusiasts.",
+      "clubId": "5",
+      "total": 218,
+      "votes": 78
     },
     {
       "id": "6",
