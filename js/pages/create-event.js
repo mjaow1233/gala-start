@@ -4,10 +4,9 @@ export default async function createEvent() {
   //hämta informationen från json filen.
 
   window.allEvents = events;
-  const clubIdsWithEvents = [...new Set(events.map(event => event.clubId))];
-  const clubsWithEvents = clubs.filter(club => 
-  clubIdsWithEvents.includes(club.id)
-  );
+  const clubIdsWithEvents = clubs;
+  
+
   return `
     <h2>Create an Event</h2>
 
@@ -15,7 +14,7 @@ export default async function createEvent() {
 
       <label>Select Club</label>
       <select name="clubId" id="club-select" required>
-        ${clubsWithEvents
+        ${clubs
           .map(
             (club) => `
           <option value="${club.id}">${club.name}</option>
@@ -24,16 +23,16 @@ export default async function createEvent() {
           .join("")}
       </select>
 
-      <label>Select Event</label>
-      <select name="eventId" id="event-select" required></select>
+      <label>Event Name</label>
+      <input type = "text" name = "event-name" required>
 
-      <label>Your Name</label>
-      <input type="text" name="visitor-name" required>
+      <label>date</label>
+      <input type = "date" name = "event-date" required>
 
-      <label>Email</label>
-      <input type="email" name="visitor-email" required>
+      <label>Event Description</label>
+      <textarea name ="event-description" required></textarea>
 
-      <button type="submit">Book</button>
+      <button type="submit">create</button>
     </form>
   `;
 }
@@ -66,22 +65,21 @@ async function submitEventForm(event) {
   const form = event.target;
 
   const clubId = form.querySelector('[name="clubId"]').value;
-  const eventId = form.querySelector('[name="eventId"]').value;
-  const name = form.querySelector('[name="visitor-name"]').value;
-  const email = form.querySelector('[name="visitor-email"]').value;
+  const name = form.querySelector('[name="event-name"]').value;
+  const date = form.querySelector('[name="event-date"]').value;
+  const description = form.querySelector('[name="event-description"]').value;
 
-  await fetch("http://localhost:3000/visitor", {
+  await fetch("http://localhost:3000/events", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ clubId, eventid: eventId, name, email }),
+    body: JSON.stringify({ clubId,name, date, description }),
   });
 
-  const selectedEvent = window.allEvents.find(
-    (e) => String(e.id) === String(eventId)
-  );
-  const eventName = selectedEvent?.name || "your event";
-
-  form.innerHTML = `<p>Thanks, ${name}! Your booking for "${eventName}" is confirmed.</p>`;
+  
+  form.innerHTML = `
+  <p> You have successfully created ${name} and
+  
+  </p> is confirmed.</p>`;
 
 }
 
