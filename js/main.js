@@ -9,7 +9,7 @@ import createEvent from "./pages/create-event.js";
 import clubs from "./pages/clubs.js";
 import bookEvent from "./pages/book-event.js";
 import balletClub from "./pages/ballet-club.js";
-const isAdmin = false;
+const isAdmin = true;
 
 const Clubmenu = {
   "jazzClub": { label: 'Jazz Club', function: jazzClub },
