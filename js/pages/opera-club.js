@@ -62,7 +62,7 @@ hour: '2-digit', minute: '2-digit'
 </section>
  
       <section class="about-opera"> 
-<h2>Om Operaklubben</h2>
+<h2>About Opera Club</h2>
 <p>The Opera Club at Gala Emporium is a celebration of drama, voice and emotion.
 Here, classic masterpieces and innovative performances meet in a world of passion and elegance.</p>
 <p>Our goal is to unite tradition and innovation to open the door to the magic of opera for both experienced visitors and curious beginners.</p>
