@@ -1,5 +1,3 @@
-// opera-club.js
- 
 function addBookingListeners() {
   document.querySelectorAll('.book-ticket-button').forEach(button => {
     button.addEventListener('click', (e) => {
@@ -18,6 +16,8 @@ const getEventImagePath = (eventName) => {
       return 'images/opera/carmen.jpg';
     case 'The Magic Flute':
       return 'images/opera/trollflöjten.jpg';
+    case 'Opera Gala Night': 
+      return 'images/Opera Gala Night.jpg'; 
     default:
       return 'https://via.placeholder.com/300x200?text=Opera+Event';
   }
@@ -42,7 +42,7 @@ export default async function operaClub() {
 <p>${club.description}</p>
 </div>
 <div class="hero-image">
-<img src="images/opera/opera-hero.jpg" alt="Operasångare på scen under föreställning">
+<img src="images/Opera Club.jpg" alt="Operasångare på scen under föreställning">
 </div>
 </section>
  
@@ -72,10 +72,10 @@ export default async function operaClub() {
  
       <section class="about-opera">
 <h2>Om Operaklubben</h2>
-<p>Operaklubben på Gala Emporium är en hyllning till dramat, rösten och känslan. 
-        Här möts klassiska mästerverk och nyskapande föreställningar i en värld av passion och elegans.</p>
-<p>Vårt mål är att förena tradition och innovation – att öppna dörren till operans magi för både erfarna besökare och nyfikna nybörjare.</p>
-<p>Upplev storslagna kvällar fyllda med musik, känslor och skönhet!</p>
+<p>The Opera Club at Gala Emporium is a celebration of drama, voice and emotion. 
+Here, classic masterpieces and innovative performances meet in a world of passion and elegance.</p>
+<p>Our goal is to unite tradition and innovation – to open the door to the magic of opera for both experienced visitors and curious beginners.</p>
+<p>Experience magnificent evenings filled with music, emotions and beauty!</p>
 </section>
     `;
  
@@ -88,4 +88,3 @@ export default async function operaClub() {
     return `<p>Kunde inte ladda Operaklubben just nu.</p>`;
   }
 }
-
