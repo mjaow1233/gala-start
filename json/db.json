@@ -49,8 +49,8 @@
       "name": "Piano Morning Show",
       "description": "A morning dedicated to piano performances and enthusiasts.",
       "clubId": "5",
-      "total": 226,
-      "votes": 81
+      "total": 231,
+      "votes": 82
     },
     {
       "id": "6",
@@ -79,8 +79,8 @@
       "name": "test eventet hejaaddd",
       "date": "2026-02-02",
       "description": "test des",
-      "total": 5,
-      "votes": 1
+      "total": 10,
+      "votes": 2
     },
     {
       "id": "80d0",
@@ -88,8 +88,8 @@
       "name": "test eventet hejaaddd",
       "date": "2026-02-02",
       "description": "test des",
-      "total": 10,
-      "votes": 2
+      "total": 15,
+      "votes": 3
     },
     {
       "id": "cfba",
@@ -97,8 +97,8 @@
       "name": "piano club 24/7",
       "date": "2026-11-13",
       "description": "live piano all day!",
-      "total": null,
-      "votes": null
+      "total": 5,
+      "votes": 1
     },
     {
       "id": "39bd",
@@ -115,8 +115,8 @@
       "name": "piano club 24/7",
       "date": "2026-11-13",
       "description": "live piano all day!",
-      "total": 5,
-      "votes": 1
+      "total": 7,
+      "votes": 2
     },
     {
       "id": "d4f4",
