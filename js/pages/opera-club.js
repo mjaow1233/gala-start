@@ -1,5 +1,3 @@
-Kopiera denna JS code
- 
 function addBookingListeners() {
   document.querySelectorAll('.book-ticket-button').forEach(button => {
     button.addEventListener('click', (e) => {

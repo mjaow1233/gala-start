@@ -1,289 +1,271 @@
-/* Importera Google Fonts för en elegant stil */
-
-
 body.opera-club {
-
-  background-color: #1a1a1a; /* Mörk bakgrund */
-
-  color: #f0f0f0; /* Ljusgrå text */
-
+ 
+  background-color: #1a1a1a;
+ 
+  color: #f0f0f0;
+ 
   font-family: 'Lora', serif;
-
+ 
   line-height: 1.7;
-
+ 
 }
  
-/* Återanvänd stilarna från balettklubben för rubriker */
-
+ 
+ 
 body.opera-club h1,
-
+ 
 body.opera-club h2,
-
+ 
 body.opera-club h3 {
-
+ 
   font-family: 'Playfair Display', serif;
-
-  color: #D4AF37; /* Guld-accent */
-
+ 
+  color: #D4AF37;
+ 
   text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-
+ 
 }
  
-/* Hero-sektion */
-
+ 
 body.opera-club .club-hero {
-
   display: flex;
-
   flex-direction: column;
-
   align-items: center;
-
   text-align: center;
-
   margin-bottom: 40px;
-
-  background-color: #2b2b2b;
-
-  padding-bottom: 2rem;
-
+  background-color: #1a1a1a;
+  padding: 2rem 0;
 }
+ 
  
 body.opera-club .club-hero .hero-image img {
-
   width: 100%;
-
-  max-height: 450px;
-
-  object-fit: cover;
-
-  filter: grayscale(30%) brightness(85%);
-
-  border-bottom: 3px solid #D4AF37;
-
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
+  filter: none;
+  border-bottom: none;
+  margin: 0 auto;
 }
  
 body.opera-club .club-hero .hero-content {
-
+ 
   padding: 20px 40px;
-
+ 
   max-width: 90%;
-
+ 
   margin-top: 1.5rem;
-
+ 
 }
  
 body.opera-club .club-hero h1 {
-
+ 
   font-size: 3.2em;
-
+ 
   margin-bottom: 10px;
-
-  color: #E6E6E6; /* Nästan vit rubrik */
-
+ 
+  color: #E6E6E6;
+ 
 }
  
 body.opera-club .club-hero p {
-
+ 
   font-size: 1.3em;
-
+ 
   color: #c0c0c0;
-
+ 
 }
  
-/* Kommande Föreställningar */
-
+ 
+ 
 body.opera-club .upcoming-events,
-
+ 
 body.opera-club .about-opera {
-
+ 
   margin: 40px auto;
-
+ 
   max-width: 1200px;
-
+ 
   padding: 0 20px;
-
+ 
 }
  
 body.opera-club .upcoming-events h2,
-
+ 
 body.opera-club .about-opera h2 {
-
+ 
   text-align: center;
-
+ 
   font-size: 2.5em;
-
+ 
   margin-bottom: 30px;
-
+ 
   border-bottom: 2px solid #D4AF37;
-
+ 
   padding-bottom: 10px;
-
+ 
   display: inline-block;
-
+ 
 }
  
-/* Centrera rubriken */
-
+ 
+ 
 body.opera-club .upcoming-events,
-
+ 
 body.opera-club .about-opera {
-
+ 
   text-align: center;
-
+ 
 }
  
 body.opera-club .events-grid {
-
+ 
   display: grid;
-
+ 
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-
+ 
   gap: 30px;
-
+ 
   text-align: left;
-
+ 
 }
  
 body.opera-club .event-card {
-
+ 
   background-color: #2b2b2b;
-
+ 
   border: 1px solid #444;
-
+ 
   border-radius: 8px;
-
+ 
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-
+ 
   overflow: hidden;
-
+ 
   display: flex;
-
+ 
   flex-direction: column;
-
+ 
   transition: transform 0.2s ease-in-out;
-
+ 
 }
  
 body.opera-club .event-card:hover {
-
+ 
   transform: translateY(-5px);
-
-  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.2); /* Guld-glow */
-
+ 
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.2);
+ 
 }
  
 body.opera-club .event-image img {
-
+ 
   width: 100%;
-
-  height: 220px;
-
+ 
+  height: auto;
+ 
   object-fit: cover;
-
+ 
   display: block;
-
+ 
 }
  
 body.opera-club .event-details {
-
+ 
   padding: 25px;
-
+ 
   flex-grow: 1;
-
+ 
   display: flex;
-
+ 
   flex-direction: column;
-
+ 
 }
  
 body.opera-club .event-details h3 {
-
+ 
   font-size: 1.8em;
-
+ 
   margin-top: 0;
-
+ 
   margin-bottom: 10px;
-
+ 
   color: #D4AF37;
-
+ 
 }
  
 body.opera-club .event-date {
-
+ 
   font-style: italic;
-
+ 
   color: #aaa;
-
+ 
   margin-bottom: 15px;
-
+ 
 }
  
 body.opera-club .event-details p {
-
+ 
   font-size: 1em;
-
+ 
   color: #c0c0c0;
-
+ 
   flex-grow: 1;
-
+ 
 }
  
-/* Bokningsknapp */
-
+ 
 body.opera-club .book-ticket-button {
-
-  background-color: #8B0000; /* Mörkröd */
-
+ 
+  background-color: #8B0000;
+ 
   color: white;
-
+ 
   border: none;
-
+ 
   padding: 12px 20px;
-
+ 
   border-radius: 5px;
-
+ 
   cursor: pointer;
-
+ 
   font-size: 1.1em;
-
+ 
   font-family: 'Playfair Display', serif;
-
+ 
   margin-top: 20px;
-
+ 
   transition: background-color 0.3s ease;
-
+ 
   align-self: flex-start;
-
+ 
   text-transform: uppercase;
-
+ 
   letter-spacing: 1px;
-
+ 
 }
  
 body.opera-club .book-ticket-button:hover {
-
-  background-color: #B22222; /* Ljusare röd */
-
+ 
+  background-color: #B22222;
+ 
 }
  
-/* Om-sektionen */
-
 body.opera-club .about-opera p {
-
+ 
   font-size: 1.1em;
-
+ 
   color: #c0c0c0;
-
+ 
   margin-bottom: 15px;
-
+ 
   line-height: 1.8;
-
+ 
   max-width: 800px;
-
+ 
   margin-left: auto;
-
+ 
   margin-right: auto;
-
+ 
 }
  
