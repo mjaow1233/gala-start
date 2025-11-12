@@ -11,13 +11,13 @@ function addBookingListeners() {
 const getEventImagePath = (eventName) => {
   switch (eventName) {
     case 'La Traviata':
-      return 'images/opera/la-traviata.jpg';
+      return 'images/opera/la-traviata.png';
     case 'Carmen':
-      return 'images/opera/carmen.jpg';
+      return 'images/opera/carmen.png';
     case 'The Magic Flute':
-      return 'images/opera/trollflöjten.jpg';
+      return 'images/opera/trollflöjten.png';
     case 'Opera Gala Night': 
-      return 'images/Opera Gala Night.jpg'; 
+      return 'images/Opera Gala Night.png'; 
     default:
       return 'https://via.placeholder.com/300x200?text=Opera+Event';
   }
