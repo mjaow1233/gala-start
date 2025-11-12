@@ -1,0 +1,122 @@
+
+body {
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+h1{
+  padding-top: 5vh;
+  padding-left: 35vw;
+}
+
+h3{
+font-size: 25px;
+padding-top: 6vh;
+margin: 0;
+}
+
+
+.dj-club-wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.dj_img {
+  width: 100%;
+  display: flex;
+  justify-content: center;  
+  padding: 0;
+  margin: 0;
+}
+
+
+.dj_img img {
+  width: auto;
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  height: 850px;
+}
+
+
+.dj-club-content {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.dj-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.media-row {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.media-row video,
+.media-row .dj_artist {
+  flex: 1;
+  height: 400px;
+}
+
+.dj_artist img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.about{
+font-family: 'Segoe UI Semibold', sans-serif;
+font-style: italic;
+font-size: 20px;
+}
+
+
+.club-info {
+  list-style: none;
+  font-family: 'Segoe UI Semibold', sans-serif;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.club-info li {
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .media-row {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .media-row video,
+  .media-row .dj_artist {
+    height: auto;
+    width: 100%;
+  }
+
+  .media-row .dj_artist img {
+    height: auto;
+    object-fit: contain;
+  }
+}
+
