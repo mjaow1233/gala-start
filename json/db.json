@@ -72,6 +72,13 @@
       "name": "The Nutcracker",
       "description": "A magical Christmas performance for the whole family.",
       "clubId": "b1e2"
+    },
+    {
+      "id": "8",
+      "date": "2025-11-12 20:00",
+      "name": "Opera Gala Night",
+      "description": "An evening of spectacular opera performances.",
+      "clubId": "7"
     }
   ],
   "visitor": [
