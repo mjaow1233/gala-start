@@ -1,8 +1,11 @@
-import clubInfoAndEvents from "../utils/club-info-and-events.js";
 
 export default async function djClub() {
+document.body.classList.remove(...document.body.classList);
+document.body.classList.add("dj-club");
+
   const res = await fetch("http://localhost:3000/events");
   const events = await res.json();
+  
 
   // Filter only events for DJ Club (clubId === "3")
   const filteredEvents = events
@@ -18,7 +21,8 @@ export default async function djClub() {
     )
     .join("");
 
-  return `
+  
+   const html = `
   <div class="dj-club-wrapper">
           
     <section class="dj_img">
@@ -60,4 +64,6 @@ export default async function djClub() {
    </div>
 </div>
   `;
+   
+   return html;
 }
