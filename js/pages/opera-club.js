@@ -1,3 +1,4 @@
+// Funktion för länk som hanterar biljettbokning
 function addBookingListeners() {
   document.querySelectorAll('.book-ticket-button').forEach(button => {
     button.addEventListener('click', (e) => {
@@ -7,8 +8,8 @@ function addBookingListeners() {
     });
   });
 }
- 
-const getEventImagePath = (eventName) => {
+
+const getEventImagePath = (eventName) => {  // Funktion för att hämta bildväg baserat på evenemangsnamn
   switch (eventName) {
     case 'Opera Gala Night':
       return 'images/Opera Gala Night.png';
@@ -16,11 +17,11 @@ const getEventImagePath = (eventName) => {
       return 'https://via.placeholder.com/300x200?text=Opera+Event';
   }
 };
- 
+ // Huvudfunktion för Opera Club-sidan
 export default async function operaClub() {
   const clubId = '7';
  
-  try {
+  try {   // Hämtar klubb- och evenemangsdata från servern
     const clubRes = await fetch(`http://localhost:3000/clubs/${clubId}`);
     const club = await clubRes.json();
  
@@ -29,14 +30,14 @@ export default async function operaClub() {
  
     events.sort((a, b) => new Date(a.date) - new Date(b.date));
  
-    let html = `
-<section class="club-hero">
+    let html = `  
+<section class="club-hero">  
 <div class="hero-image">
 <img src="images/Opera Club.png" alt="Opera Club Logotyp">
 </div>
 </section>
  
-      <section class="upcoming-events">
+      <section class="upcoming-events">    
 <h2>Kommande Föreställningar</h2>
 <div class="events-grid">
           ${events.map(event => `
@@ -60,7 +61,7 @@ hour: '2-digit', minute: '2-digit'
 </div>
 </section>
  
-      <section class="about-opera">
+      <section class="about-opera"> 
 <h2>Om Operaklubben</h2>
 <p>The Opera Club at Gala Emporium is a celebration of drama, voice and emotion.
 Here, classic masterpieces and innovative performances meet in a world of passion and elegance.</p>
@@ -69,7 +70,7 @@ Here, classic masterpieces and innovative performances meet in a world of passio
 </section>
     `;
  
-    setTimeout(addBookingListeners, 0);
+    setTimeout(addBookingListeners, 0); // Lägg till lyssnare för bokningsknappar efter att HTML har renderats
     document.body.className = "opera-club";
     return html;
  
