@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "Jazz-club",
-      "description": "En jazz klubb"
+      "description": "A jazz-club with some extra blue."
     },
     {
       "id": "3",
@@ -28,10 +28,24 @@
   ],
   "events": [
     {
-      "id": "2",
+      "id": "a55e",
       "date": "2025-11-05 19:00",
-      "name": "jazz clubsfest",
-      "description": "test",
+      "name": "New orleans celebration",
+      "description": "Lorem ipsum, Ipsum lorem, lorems ispum haspate lorem",
+      "clubId": "1"
+    },
+    {
+      "id": "e33a",
+      "date": "2025-11-05 19:00",
+      "name": "Jam night",
+      "description": "Lorem ipsum, Ipsum lorem, lorems ispum haspate lorem",
+      "clubId": "1"
+    },
+    {
+      "id": "e33g",
+      "date": "2025-11-05 19:00",
+      "name": "Local brass gang",
+      "description": "Lorem ipsum, Ipsum lorem, lorems ispum haspate lorem",
       "clubId": "1"
     },
     {
@@ -74,24 +88,6 @@
       "clubId": "b1e2"
     },
     {
-      "id": "d5b1",
-      "clubId": "5",
-      "name": "test eventet hejaaddd",
-      "date": "2026-02-02",
-      "description": "test des",
-      "total": 10,
-      "votes": 2
-    },
-    {
-      "id": "80d0",
-      "clubId": "5",
-      "name": "test eventet hejaaddd",
-      "date": "2026-02-02",
-      "description": "test des",
-      "total": 15,
-      "votes": 3
-    },
-    {
       "id": "cfba",
       "clubId": "5",
       "name": "piano club 24/7",
@@ -120,7 +116,7 @@
     },
     {
       "id": "d4f4",
-      "clubId": "1",
+      "clubId": "5",
       "name": "piano club 24/7",
       "date": "2026-11-15",
       "description": "piano every hour!"
