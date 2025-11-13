@@ -2,6 +2,9 @@ export default async function clubRatings(clubId) {
   const events = await (
     await fetch(`http://localhost:3000/events?clubId=${clubId}`)
   ).json();
+   
+
+
 
   const html = events
     .map((event) => {
@@ -30,6 +33,32 @@ export default async function clubRatings(clubId) {
 
   return html;
 }
+function newestRatings() {
+  
+  if (window.location.hash !== "#pianoClub") return;
+
+  const events = document.querySelectorAll(".rateclub-event");
+  events.forEach((event, index) => {
+    if (index < 3) {
+      event.style.display = "";
+    } else {
+      event.style.display = "none";
+    }
+  });
+}
+function limitUpcomingEvents() {
+  if (window.location.hash !== "#pianoClub") return;
+
+  const events = document.querySelectorAll(".event-card");
+  events.forEach((event, index) => {
+    if (index < 3) {
+      event.style.display = "";
+    } else {
+      event.style.display = "none";
+    }
+  });
+}
+
 export function starSystem() {
   const stars = document.querySelectorAll(".star");
 
@@ -66,21 +95,23 @@ export function starSystem() {
   });
 }
 window.addEventListener("hashchange", () => {
-  
   setTimeout(() => {
     const stars = document.querySelectorAll(".star");
     if (stars.length > 0) {
       starSystem();
+      newestRatings();
+      limitUpcomingEvents();
     }
   }, 200);
 });
-
 
 window.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     const stars = document.querySelectorAll(".star");
     if (stars.length > 0) {
       starSystem();
+      newestRatings();
+      limitUpcomingEvents();
     }
   }, 200);
 });
