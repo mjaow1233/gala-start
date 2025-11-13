@@ -8,7 +8,7 @@
     {
       "id": "3",
       "name": "Dj-club",
-      "description": "."
+      "description": "A club where timeless hits live on. Feel the beat of the past"
     },
     {
       "id": "5",
@@ -56,7 +56,7 @@
       "id": "6",
       "date": "2025-11-01 19:00",
       "name": "90's Night",
-      "description": "",
+      "description": "Vibe to 90's hits all night long",
       "clubId": "3"
     },
     {
@@ -124,6 +124,20 @@
       "name": "piano club 24/7",
       "date": "2026-11-15",
       "description": "piano every hour!"
+    },
+    {
+      "id": "4bdb",
+      "clubId": "3",
+      "name": "Throwback Thursday",
+      "date": "2025-11-20",
+      "description": "A throwback to old popular hits from different music genres!"
+    },
+    {
+      "id": "4cce",
+      "clubId": "3",
+      "name": "Early 2000s",
+      "date": "2025-11-13",
+      "description": "2000s vibes. Pure nostalgia. Let's go!"
     }
   ],
   "visitor": [

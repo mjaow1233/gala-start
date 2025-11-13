@@ -32,8 +32,8 @@ document.body.classList.add("dj-club");
     <div class="dj-club-content">
 
     <h1>About DJ Club</h1>
-    <p class="about">Step into the groove of Throwback Thursdays at the Gala Emporium, where vintage beats reign supreme and nostalgia pulses <br> through the speakers.
-       From disco anthems and 90s hits to early 2000s hits, every night is a time-traveling dance party lit by neon <br> lights and vinyl vibes. 
+    <p class="about">Step into the groove of Throwback Thursdays at the Gala Emporium, where vintage beats reign supreme and <br> nostalgia pulses through the speakers.
+       From disco anthems and 90s hits to early 2000s hits, every night is a time-traveling <br> dance party lit by neon lights and vinyl vibes. 
        This is where old-school sound meets new-school soul and the dance floor never sleeps.
     </p>
 
