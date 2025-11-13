@@ -4,6 +4,18 @@ body.jazzClub {
   margin: 0;
 }
 
+body.jazzClub .jazz-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  width: 90%;
+  margin: 0rem auto;
+  padding: 2rem;
+  background: #3a3a3a;
+  border-radius: 2px;
+
+}
 
 body.jazzClub .hero {
   display: flex;
@@ -98,9 +110,7 @@ body.jazzClub header nav .dropdown-content {
   left: 0;
   background-color: #000000;
   border-color: #f8f8f8;
-
   min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   z-index: 100;
   flex-direction: column;
@@ -108,10 +118,6 @@ body.jazzClub header nav .dropdown-content {
 }
 
 body.jazzClub header nav .dropdown-content a {
-  font-family: 'Times New Roman', Times, serif;
-  color: white;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
   display: block;
 }
 
@@ -161,37 +167,69 @@ body.jazzClub .grid {
 
 
 body.jazzClub .jazzevents {
-  width: 90%;
-  background: white;
-  border: 2px solid #ccc;
-  padding: 1rem;
+  flex: 2;
+  background: rgb(136, 135, 135);
+  padding: 2rem;
   border-radius: 6px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
+
+
+
+body.jazzClub .jazzabout {
+  flex: 1;
+  background: rgb(130, 130, 130);
+  padding: 2rem;
+  border-radius: 6px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+
+}
 
 body.jazzClub .events-grid {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  flex-wrap: nowrap;
-  gap: 1.5rem;
-  overflow-x: auto;
+  flex-wrap: wrap;
+  gap: 0.8rem;
   padding-bottom: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
+
+
 
 body.jazzClub .events-grid article.jazzevents {
   background: #ffffff;
   color: #000000;
   border-radius: 8px;
-  flex: 0 0 280px;
+  flex: 0 0 220px;
   padding: 1rem;
   text-align: left;
+  border: 1px solid #ccc;
 }
 
 
 body.jazzClub .events-grid .date {
   font-size: 0.9rem;
-  color: #ccc;
+  color: #000000;
   margin-bottom: 0.5rem;
+}
+
+body.jazzClub .jazzabout .jazzimage {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+
+body.jazzClub .jazzabout .jazzimage img {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
