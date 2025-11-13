@@ -49,24 +49,6 @@
       "clubId": "1"
     },
     {
-      "id": "a44b",
-      "date": "2025-11-15 21:00",
-      "name": "Piano Evening Show",
-      "description": "An evening dedicated to piano performances and enthusiasts.",
-      "clubId": "5",
-      "total": 42,
-      "votes": 12
-    },
-    {
-      "id": "a45b",
-      "date": "2025-11-16 21:00",
-      "name": "Piano Morning Show",
-      "description": "An morning dedicated to piano performances and enthusiasts.",
-      "clubId": "5",
-      "total": 57,
-      "votes": 14
-    },
-    {
       "id": "6",
       "date": "2025-11-01 19:00",
       "name": "90's Night",
@@ -88,40 +70,6 @@
       "clubId": "b1e2"
     },
     {
-      "id": "cfba",
-      "clubId": "5",
-      "name": "piano club 24/7",
-      "date": "2026-11-13",
-      "description": "live piano all day!",
-      "total": 5,
-      "votes": 1
-    },
-    {
-      "id": "39bd",
-      "clubId": "5",
-      "name": "piano club 24/7",
-      "date": "2026-11-13",
-      "description": "live piano all day!",
-      "total": 9,
-      "votes": 2
-    },
-    {
-      "id": "8fe1",
-      "clubId": "5",
-      "name": "piano club 24/7",
-      "date": "2026-11-13",
-      "description": "live piano all day!",
-      "total": 7,
-      "votes": 2
-    },
-    {
-      "id": "d4f4",
-      "clubId": "5",
-      "name": "piano club 24/7",
-      "date": "2026-11-15",
-      "description": "piano every hour!"
-    },
-    {
       "id": "8",
       "date": "2025-11-12 20:00",
       "name": "Opera Gala Night",
@@ -129,14 +77,20 @@
       "clubId": "7"
     },
     {
-      "id": "0328",
+      "id": "e7fc",
       "clubId": "5",
-      "name": "piano club 24/7",
-      "date": "2025-11-20",
-      "description": "Piano for everyone all day",
-      "total": 12,
-      "votes": 3
+      "name": "Piano Evening",
+      "date": "2025-11-14",
+      "description": "A short performance featuring peaceful, original piano pieces played live — a quiet, relaxing moment to enjoy the sound of solo keys. Open from 18–22. Welcome!"
+    },
+    {
+      "id": "533c",
+      "clubId": "5",
+      "name": "Piano Morning",
+      "date": "2025-11-15",
+      "description": "Start your day with calm melodies and gentle piano tones that set a peaceful morning mood. Open from 08:00 to 12:00. Welcome!"
     }
+
   ],
   "visitor": [
     {
