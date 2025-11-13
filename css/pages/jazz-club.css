@@ -158,6 +158,8 @@ body.jazzClub .grid {
   gap: 1rem;
 }
 
+
+
 body.jazzClub .jazzevents {
   width: 90%;
   background: white;
@@ -165,4 +167,31 @@ body.jazzClub .jazzevents {
   padding: 1rem;
   border-radius: 6px;
   text-align: center;
+}
+
+
+body.jazzClub .events-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+body.jazzClub .events-grid article.jazzevents {
+  background: #ffffff;
+  color: #000000;
+  border-radius: 8px;
+  flex: 0 0 280px;
+  padding: 1rem;
+  text-align: left;
+}
+
+
+body.jazzClub .events-grid .date {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
 }

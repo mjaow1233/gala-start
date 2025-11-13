@@ -1,26 +1,20 @@
-
 export default async function jazzClub() {
-  document.body.classList.remove(...document.body.classList);
-  document.body.classList.add("jazzClub");
 
   const res = await fetch("http://localhost:3000/events");
   const events = await res.json();
-
-
 
   const filteredEvents = events
     .filter((event) => event.clubId === "1")
     .map(
       ({ date, name, description }) => `
-      <article class="jazzevents">
-        <h3>${name}</h3>
-        <p class="date">${new Date(date).toLocaleDateString()}</p>
-        <p>${description}</p>
-      </article>
-    `
+        <article class="jazzevents">
+          <h3>${name}</h3>
+          <p class="date">${new Date(date).toLocaleDateString()}</p>
+          <p>${description}</p>
+        </article>
+      `
     )
     .join("");
-
 
   const html = `
     <section class="hero">
@@ -29,20 +23,12 @@ export default async function jazzClub() {
         Your browser does not support the video tag.
       </video>
     </section>
-      <section class="jazzevents">
-    <h3>Upcoming events</h3>
-    <div class="events-grid">${filteredEvents}</div>
-</section>
 
-</ul>   
-
-   </div>
-</div>
+    <section class="jazzevents">
+      <h3>Upcoming events</h3>
+      <div class="events-grid">${filteredEvents}</div>
+    </section>
   `;
 
   return html;
 }
-
-
-
-
