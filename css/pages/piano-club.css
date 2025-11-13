@@ -4,7 +4,7 @@ body.pianoClub {
   background-color: #0b0e03ec;
   font-family: "Story Script";
   font-size: 21px;
-  color: #333;
+  color: #f60505;
   margin: 0;
   padding: 0;
 }
@@ -16,101 +16,12 @@ body.pianoClub .hero {
   border-radius: 5px;
   border: 4px solid rgb(0, 0, 0);
 }
-
-body.pianoClub .rateclub-event {
-  border: 10px solid #ddd;
-  border-radius: 8px;
-  background-color: #ffffff;
-
-  padding: 15px;
-  width: 100%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-}
-
-body.pianoClub .rateclub-event h3 {
-  font-family: "Story Script";
+.about-club {
   text-align: center;
+  padding: 40px 0;
 }
-
-body.pianoClub .rateclub-event p {
-  font-family: "Story Script";
-  text-align: center;
-  font-size: 21px;
-  color: #333;
-}
-
-body.pianoClub .stars {
-  display: flex;
-  justify-content: center;
-  gap: 6px;
-  margin-top: 10px;
-  cursor: pointer;
-}
-
-body.pianoClub .star {
-  font-size: 2rem;
-  color: #ccc;
-  transition: color 0.2s;
-}
-
-body.pianoClub .star:hover,
-body.pianoClub .star.selected {
-  color: gold;
-}
-body.pianoClub header {
-  width: 90%;
-  margin: 10px auto;
-  box-sizing: border-box;
-}
-
-body.pianoClub .event-info,
-body.pianoClub .event-ratings {
-  width: 90%;
-  margin: 0 auto;
-  padding-bottom: 40px;
-}
-
-body.pianoClub .event-info > h3,
-body.pianoClub .event-ratings > h3 {
-  font-family: "Story Script";
-  font-size: 21px;
-  font-weight: 400;
+.event-info h3 {
   text-align: center;
   margin: 20px 0;
-  color: #ee0404;
-}
-body.pianoClub h2 {
-  font-family: "Story Script";
-  font-size: 21px;
-  font-weight: 400;
-  text-align: center;
-  margin: 20px 0;
-  color: #ee0404;
-}
-
-body.pianoClub .about-club {
-  width: 90%;
-  margin: 60px auto;
-  padding: 30px 40px;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #f8f8f8;
-}
-
-body.pianoClub .about-club h3 {
-  font-family: "Story Script";
-  text-align: center;
-  font-size: 26px;
-  color: #ee0404;
-  margin-bottom: 20px;
-}
-
-body.pianoClub .about-club p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 16px;
-  text-align: center;
-  color: #f2f2f2;
+  color: #fff; 
 }
