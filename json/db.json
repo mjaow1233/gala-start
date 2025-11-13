@@ -3,7 +3,7 @@
     {
       "id": "1",
       "name": "Jazz-club",
-      "description": "En jazz klubb"
+      "description": "A jazz-club with some extra blue."
     },
     {
       "id": "3",
@@ -28,29 +28,25 @@
   ],
   "events": [
     {
-      "id": "2",
+      "id": "a55e",
       "date": "2025-11-05 19:00",
-      "name": "jazz clubsfest",
-      "description": "test",
+      "name": "New orleans celebration",
+      "description": "Lorem ipsum, Ipsum lorem, lorems ispum haspate lorem",
       "clubId": "1"
     },
     {
-      "id": "a44b",
-      "date": "2025-11-06 21:00",
-      "name": "Piano Evening",
-      "description": "A evening dedicated to piano performances and enthusiasts.",
-      "clubId": "5",
-      "total": 223,
-      "votes": 55
+      "id": "e33a",
+      "date": "2025-11-05 19:00",
+      "name": "Jam night",
+      "description": "Lorem ipsum, Ipsum lorem, lorems ispum haspate lorem",
+      "clubId": "1"
     },
     {
-      "id": "a45b",
-      "date": "2025-11-06 21:00",
-      "name": "Piano Morning Show",
-      "description": "A morning dedicated to piano performances and enthusiasts.",
-      "clubId": "5",
-      "total": 231,
-      "votes": 82
+      "id": "e33g",
+      "date": "2025-11-05 19:00",
+      "name": "Local brass gang",
+      "description": "Lorem ipsum, Ipsum lorem, lorems ispum haspate lorem",
+      "clubId": "1"
     },
     {
       "id": "6",
@@ -74,71 +70,27 @@
       "clubId": "b1e2"
     },
     {
-      "id": "d5b1",
+      "id": "8",
+      "date": "2025-11-12 20:00",
+      "name": "Opera Gala Night",
+      "description": "An evening of spectacular opera performances.",
+      "clubId": "7"
+    },
+    {
+      "id": "e7fc",
       "clubId": "5",
-      "name": "test eventet hejaaddd",
-      "date": "2026-02-02",
-      "description": "test des",
-      "total": 10,
-      "votes": 2
+      "name": "Piano Evening",
+      "date": "2025-11-14",
+      "description": "A short performance featuring peaceful, original piano pieces played live — a quiet, relaxing moment to enjoy the sound of solo keys. Open from 18–22. Welcome!"
     },
     {
-      "id": "80d0",
+      "id": "533c",
       "clubId": "5",
-      "name": "test eventet hejaaddd",
-      "date": "2026-02-02",
-      "description": "test des",
-      "total": 15,
-      "votes": 3
-    },
-    {
-      "id": "cfba",
-      "clubId": "5",
-      "name": "piano club 24/7",
-      "date": "2026-11-13",
-      "description": "live piano all day!",
-      "total": 5,
-      "votes": 1
-    },
-    {
-      "id": "39bd",
-      "clubId": "5",
-      "name": "piano club 24/7",
-      "date": "2026-11-13",
-      "description": "live piano all day!",
-      "total": 9,
-      "votes": 2
-    },
-    {
-      "id": "8fe1",
-      "clubId": "5",
-      "name": "piano club 24/7",
-      "date": "2026-11-13",
-      "description": "live piano all day!",
-      "total": 7,
-      "votes": 2
-    },
-    {
-      "id": "d4f4",
-      "clubId": "1",
-      "name": "piano club 24/7",
-      "date": "2026-11-15",
-      "description": "piano every hour!"
-    },
-    {
-      "id": "4bdb",
-      "clubId": "3",
-      "name": "Throwback Thursday",
-      "date": "2025-11-20",
-      "description": "A throwback to old popular hits from different music genres!"
-    },
-    {
-      "id": "4cce",
-      "clubId": "3",
-      "name": "Early 2000s",
-      "date": "2025-11-13",
-      "description": "2000s vibes. Pure nostalgia. Let's go!"
+      "name": "Piano Morning",
+      "date": "2025-11-15",
+      "description": "Start your day with calm melodies and gentle piano tones that set a peaceful morning mood. Open from 08:00 to 12:00. Welcome!"
     }
+
   ],
   "visitor": [
     {
@@ -210,6 +162,55 @@
       "eventid": "c3d4",
       "name": "aa",
       "email": "daa@gmail.com"
+    },
+    {
+      "id": "01a9",
+      "clubId": "5",
+      "eventid": "a45b",
+      "name": "fewfew",
+      "email": "test@test.com"
+    },
+    {
+      "id": "83dd",
+      "clubId": "1",
+      "eventid": "2",
+      "name": "test",
+      "email": "o@o.com"
+    },
+    {
+      "id": "92d8",
+      "clubId": "3",
+      "eventid": "6",
+      "name": "testset",
+      "email": "ko@ko.com"
+    },
+    {
+      "id": "213a",
+      "clubId": "5",
+      "eventid": "a44b",
+      "name": "daniel",
+      "email": "gewrkg@geriog.com"
+    },
+    {
+      "id": "d94b",
+      "clubId": "5",
+      "eventid": "a44b",
+      "name": "fwefew",
+      "email": "test@test.com"
+    },
+    {
+      "id": "36f5",
+      "clubId": "5",
+      "eventid": "a45b",
+      "name": "Daniel",
+      "email": "test@test.com"
+    },
+    {
+      "id": "ce60",
+      "clubId": "3",
+      "eventid": "6",
+      "name": "fewfew",
+      "email": "o@o.com"
     }
   ]
 }

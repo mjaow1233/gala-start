@@ -1,0 +1,235 @@
+body.jazzClub {
+  background: #4d4d4d;
+  color: #222;
+  margin: 0;
+}
+
+body.jazzClub .jazz-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  width: 90%;
+  margin: 0rem auto;
+  padding: 2rem;
+  background: #3a3a3a;
+  border-radius: 2px;
+
+}
+
+body.jazzClub .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+body.jazzClub .hero-video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  aspect-ratio: 1536 / 624;
+}
+
+
+
+body.jazzClub body {
+  background: #4d4d4d;
+  color: #222;
+  margin: 0;
+}
+
+body.jazzClub header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 2rem 0;
+  border: 2px solid #000000;
+  background-color: rgb(0, 0, 0);
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+body.jazzClub header nav .dropdown-content a {
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  display: block;
+
+}
+
+body.jazzClub header nav .dropdown-content a:hover {
+  background-color: beige;
+  color: #000000;
+}
+
+
+body.jazzClub header nav a {
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  font-size: 1.6rem;
+  padding-top: 2vh;
+  background-color: transparent;
+  border-radius: 4px;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+body.jazzClub header nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+body.jazzClub header nav {
+  background-color: #000000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 1rem 0;
+}
+
+
+body.jazzClub header nav .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000000;
+  border-color: #f8f8f8;
+  min-width: 160px;
+  border-radius: 4px;
+  z-index: 100;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+
+body.jazzClub header nav .dropdown-content a {
+  display: block;
+}
+
+body.jazzClub header nav .dropdown-content a:hover {
+  background-color: rgb(110, 105, 255);
+  color: #000000;
+}
+
+body.jazzClub header nav .dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+body.jazzClub header nav a:hover {
+  background-color: rgb(110, 105, 255);
+  color: #000000
+}
+
+body.jazzClub .upcoming {
+  padding: 0.5rem 5%;
+
+}
+
+body.jazzClub .upcoming h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
+body.jazzClub footer {
+  margin-top: 3rem;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+body.jazzClub .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+
+
+body.jazzClub .jazzevents {
+  flex: 2;
+  background: rgb(136, 135, 135);
+  padding: 2rem;
+  border-radius: 6px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+body.jazzClub .jazzabout {
+  flex: 1;
+  background: rgb(130, 130, 130);
+  padding: 2rem;
+  border-radius: 6px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+
+}
+
+body.jazzClub .events-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  padding-bottom: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+
+body.jazzClub .events-grid article.jazzevents {
+  background: #ffffff;
+  color: #000000;
+  border-radius: 8px;
+  flex: 0 0 220px;
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+
+body.jazzClub .events-grid .date {
+  font-size: 0.9rem;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+body.jazzClub .jazzabout .jazzimage {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+
+body.jazzClub .jazzabout .jazzimage img {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

@@ -6,6 +6,8 @@
 @import '../pages/clubs.css';
 @import '../pages/ballet-club.css';
 @import '../pages/dj-club.css';
+@import '../pages/opera-club.css';
+@import '../pages/piano-club.css';
 
 body {
   margin: 20px;
