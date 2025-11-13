@@ -29,28 +29,28 @@
   "events": [
     {
       "id": "2",
-      "date": "2025-11-05 19:00",
+      "date": "2025-11-14 19:00",
       "name": "jazz clubsfest",
       "description": "test",
       "clubId": "1"
     },
     {
       "id": "a44b",
-      "date": "2025-11-06 21:00",
-      "name": "Piano Evening",
-      "description": "A evening dedicated to piano performances and enthusiasts.",
+      "date": "2025-11-15 21:00",
+      "name": "Piano Evening Show",
+      "description": "An evening dedicated to piano performances and enthusiasts.",
       "clubId": "5",
-      "total": 223,
-      "votes": 55
+      "total": 42,
+      "votes": 12
     },
     {
       "id": "a45b",
-      "date": "2025-11-06 21:00",
+      "date": "2025-11-16 21:00",
       "name": "Piano Morning Show",
-      "description": "A morning dedicated to piano performances and enthusiasts.",
+      "description": "An morning dedicated to piano performances and enthusiasts.",
       "clubId": "5",
-      "total": 231,
-      "votes": 82
+      "total": 57,
+      "votes": 14
     },
     {
       "id": "6",
@@ -74,63 +74,20 @@
       "clubId": "b1e2"
     },
     {
-      "id": "d5b1",
-      "clubId": "5",
-      "name": "test eventet hejaaddd",
-      "date": "2026-02-02",
-      "description": "test des",
-      "total": 10,
-      "votes": 2
-    },
-    {
-      "id": "80d0",
-      "clubId": "5",
-      "name": "test eventet hejaaddd",
-      "date": "2026-02-02",
-      "description": "test des",
-      "total": 15,
-      "votes": 3
-    },
-    {
-      "id": "cfba",
-      "clubId": "5",
-      "name": "piano club 24/7",
-      "date": "2026-11-13",
-      "description": "live piano all day!",
-      "total": 5,
-      "votes": 1
-    },
-    {
-      "id": "39bd",
-      "clubId": "5",
-      "name": "piano club 24/7",
-      "date": "2026-11-13",
-      "description": "live piano all day!",
-      "total": 9,
-      "votes": 2
-    },
-    {
-      "id": "8fe1",
-      "clubId": "5",
-      "name": "piano club 24/7",
-      "date": "2026-11-13",
-      "description": "live piano all day!",
-      "total": 7,
-      "votes": 2
-    },
-    {
-      "id": "d4f4",
-      "clubId": "1",
-      "name": "piano club 24/7",
-      "date": "2026-11-15",
-      "description": "piano every hour!"
-    },
-    {
       "id": "8",
       "date": "2025-11-12 20:00",
       "name": "Opera Gala Night",
       "description": "An evening of spectacular opera performances.",
       "clubId": "7"
+    },
+    {
+      "id": "0328",
+      "clubId": "5",
+      "name": "piano club 24/7",
+      "date": "2025-11-20",
+      "description": "Piano for everyone all day",
+      "total": 12,
+      "votes": 3
     }
   ],
   "visitor": [
