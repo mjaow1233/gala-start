@@ -1,13 +1,6 @@
-/* Design för club sidan*/
-.clubs-page-container {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 5%;
-}
-
 .clubs-page-container h1 {
   font-size: 2.5rem;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -25,82 +18,75 @@
   gap: 1.5rem;
 }
 
-
-.club-card-horizontal {
+/* === Club Card Base === */
+.club-card {
   display: grid;
-  grid-template-columns: 200px 1fr; 
+  grid-template-columns: 200px 1fr;
   min-height: 150px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
   text-decoration: none;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.club-card-horizontal:hover {
+.club-card:hover {
   transform: scale(1.02);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
-
-.club-card-image {
+.club-card__image {
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
 }
 
-
-.club-card-text {
+.club-card__text {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.club-card-text h3 {
+.club-card__text h3 {
   font-size: 1.6rem;
   margin: 0 0 0.5rem 0;
   color: #333;
 }
 
-.club-card-text p {
-  font-family: 'Georgia', serif;
+.club-card__text p {
+  font-family: "Georgia", serif;
   font-size: 1rem;
   color: #555;
   margin: 0;
   line-height: 1.4;
 }
 
-/*Unik design för varje klubb, och dessa kan justeras individuellt.*/
-
-/* Jazz-klubben */
-#club-card-1 .club-card-image {
-  background-image: url('../images/logo16.png');
-  background-position: 50% 30%; 
+/* === Club-specific modifiers === */
+.club-card--jazz .club-card__image {
+  background-image: url("../images/logo16.png");
+  background-position: 50% 30%;
 }
 
-/* DJ-klubben */
-#club-card-3 .club-card-image {
-    background-image: url('../images/logo16.png');
-    background-position: 50% 50%;
+.club-card--dj .club-card__image {
+  background-image: url("../images/logo16.png");
+  background-position: 50% 50%;
 }
 
-/* Piano-klubben */
-#club-card-5 .club-card-image {
-  background-image: url('../images/logo16.png');
-  background-position: 40% 60%; 
+.club-card--piano .club-card__image {
+  background-image: url("../images/logo16.png");
+  background-position: 40% 60%;
 }
 
-#club-card-7 .club-card-image {
-  background-image: url('');
-  background-position: 50% 20%; 
+.club-card--empty .club-card__image {
+  background-image: none;
+  background-position: 50% 20%;
 }
 
-/* Ballet Club */
-#club-card-b1e2 .club-card-image {
-  background-image: url('../images/balett/balett-hero.png');
+.club-card--ballet .club-card__image {
+  background-image: url("../images/balett/balett-hero.png");
 }

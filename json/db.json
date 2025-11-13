@@ -40,8 +40,8 @@
       "name": "Piano Evening Show",
       "description": "An evening dedicated to piano performances and enthusiasts.",
       "clubId": "5",
-      "total": 42,
-      "votes": 12
+      "total": 44,
+      "votes": 13
     },
     {
       "id": "a45b",
@@ -49,8 +49,8 @@
       "name": "Piano Morning Show",
       "description": "An morning dedicated to piano performances and enthusiasts.",
       "clubId": "5",
-      "total": 57,
-      "votes": 14
+      "total": 67,
+      "votes": 17
     },
     {
       "id": "6",
@@ -86,8 +86,8 @@
       "name": "piano club 24/7",
       "date": "2025-11-20",
       "description": "Piano for everyone all day",
-      "total": 12,
-      "votes": 3
+      "total": 36,
+      "votes": 8
     }
   ],
   "visitor": [
