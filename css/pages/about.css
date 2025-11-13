@@ -1,0 +1,70 @@
+body.about {
+  margin: 0 auto;
+  padding: 0;
+  background-color:rgb(14, 0, 0);
+}
+
+body.about .about_content {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body.about .about_content .about_img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body.about .about_content .about_img img {
+  width: 100%;       
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 800px;
+}
+
+body.about h1 {
+  text-align: center;
+  padding-top: 5vh;
+  margin-bottom: 1vh;
+  color: white;
+}
+
+body.about .info {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.6;
+  margin-right: 10rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  margin-left: 10rem;
+  
+}
+
+body.about h3 {
+  font-size: 25px;
+  padding-top: 6vh;
+  margin: 0;
+  color: white;
+  margin-left: 40rem;
+}
+
+body.about .contact-us {
+  list-style: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: white;
+}
+
+body.about .contact-us li {
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+  margin-left: 35rem;
+
+}

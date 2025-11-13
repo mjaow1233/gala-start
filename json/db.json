@@ -8,7 +8,7 @@
     {
       "id": "3",
       "name": "Dj-club",
-      "description": "."
+      "description": "A club where timeless hits live on. Feel the beat of the past"
     },
     {
       "id": "5",
@@ -52,7 +52,7 @@
       "id": "6",
       "date": "2025-11-01 19:00",
       "name": "90's Night",
-      "description": "",
+      "description": "Vibe to 90's hits all night long",
       "clubId": "3"
     },
     {
