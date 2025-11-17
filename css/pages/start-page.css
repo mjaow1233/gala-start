@@ -1,8 +1,220 @@
-body.start {
-  background-color: #eee;
+body {
+  background: #f8f8f8;
   color: #222;
+  margin: 0;
+}
 
-  a {
-    color: blue;
-  }
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 2rem 0;
+  border: 2px solid #000000;
+  background-color: rgb(96, 88, 13);
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+header nav .dropdown-content a {
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+header nav .dropdown-content a:hover {
+  background-color: beige;
+  color: #000000;
+}
+
+.hero img {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: auto;
+
+}
+
+header nav a {
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 2vh;
+  background-color: transparent;
+  border-radius: 4px;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+header nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+header nav {
+  background-color: #021c11;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 1rem 0;
+}
+
+
+header nav .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #021c11;
+
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  z-index: 100;
+  flex-direction: column;
+  padding: 0.5rem 0;
+}
+
+header nav .dropdown-content a {
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+header nav .dropdown-content a:hover {
+  background-color: beige;
+  color: #000000;
+}
+
+header nav .dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+header nav a:hover {
+  background-color: beige;
+  color: #000000
+}
+
+.upcoming {
+  padding: 0.5rem 5%;
+
+}
+
+.upcoming h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.event-card {
+  background: white;
+  border: 2px solid #ccc;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+
+.clubs{
+  margin: 2rem 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.club-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+
+  background: white;
+  min-width: 100px;
+  text-align: center;
+}
+
+
+footer {
+  margin-top: 3rem;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Jazz-knappen */
+#jazz-btn {
+  background-color: #003366; 
+  color: white;
+  border-color: #003366;
+}
+#jazz-btn:hover {
+  background-color: #005599;
+}
+
+/* Piano-knappen */
+#piano-btn {
+  background-color: #333333; 
+  color: white;
+  border-color: #333333;
+}
+#piano-btn:hover {
+  background-color: #555555;
+}
+
+/* DJ-knappen */
+#dj-btn {
+  background-color: #114a34;
+  color: white;
+  border-color: #114a34;
+}
+#dj-btn:hover {
+  background-color: #1a6d4e;
+}
+
+#opera-btn {
+  background-color: #6a0dad;
+  color: white;
+  border-color: #6a0dad;
+}
+#opera-btn:hover {
+  background-color: #8a2be2;
+}
+
+/* Balett-knappen*/
+#ballet-btn {
+  background-color: #FDF5E6; 
+  color: #5D4037; 
+  border-color: #5D4037;
+}
+#ballet-btn:hover {
+  background-color: #efe8d9;
+}
+
+/* Add-club-knappen */
+#add-club-btn:hover {
+  background-color: #f0f0f0;
 }

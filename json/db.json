@@ -1,37 +1,216 @@
 {
   "clubs": [
     {
-      "id": "a37c",
-      "name": "Jazz-klubben",
-      "description": "Vår laid-back jazz-klubb där vi varje vecka får träffa nya spännande artister."
+      "id": "1",
+      "name": "Jazz-club",
+      "description": "A jazz-club with some extra blue."
     },
     {
-      "id": "fg5i",
-      "name": "Metal-klubben",
-      "description": "Ylande metal som får dig att vilja erövra världen! Varje vecka med Tom som konferencier."
+      "id": "3",
+      "name": "Dj-club",
+      "description": "A club where timeless hits live on. Feel the beat of the past"
+    },
+    {
+      "id": "5",
+      "name": "Piano-club",
+      "description": "A place for piano enthusiasts to share and enjoy music."
+    },
+    {
+      "id": "7",
+      "name": "Opera-club",
+      "description": "."
+    },
+    {
+      "id": "b1e2",
+      "name": "Ballet Club",
+      "description": "Classical and modern ballet on the big stage. Experience the magic in movement and music."
     }
   ],
   "events": [
     {
-      "id": "43ac",
+      "id": "a55e",
       "date": "2025-11-05 19:00",
-      "name": "New Orleans-bandet",
-      "description": "New Orleans-bandet spelar old school jazz från 30-talet, med sväng och klarinett.",
-      "clubId": "a37c"
+      "name": "New orleans celebration",
+      "description": "Lorem ipsum, Ipsum lorem, lorems ispum haspate lorem",
+      "clubId": "1"
     },
     {
-      "id": "57f3",
-      "date": "2025-11-06 21:00",
-      "name": "Mega Death-die",
-      "description": "En open stage för death-metal-rockare, 30 minuter per band, upp till 6 band per kväll. Stjäl inte varandras effektpedaler!",
-      "clubId": "fg5i"
+      "id": "e33a",
+      "date": "2025-11-05 19:00",
+      "name": "Jam night",
+      "description": "Lorem ipsum, Ipsum lorem, lorems ispum haspate lorem",
+      "clubId": "1"
     },
     {
-      "id": "43ac",
+      "id": "e33g",
+      "date": "2025-11-05 19:00",
+      "name": "Local brass gang",
+      "description": "Lorem ipsum, Ipsum lorem, lorems ispum haspate lorem",
+      "clubId": "1"
+    },
+    {
+      "id": "6",
       "date": "2025-11-01 19:00",
-      "name": "Fusion-jazzarna Corea's Disciples",
-      "description": "Cool fusion-jazz med en massa dim-ackord.",
-      "clubId": "a37c"
+      "name": "90's Night",
+      "description": "Vibe to 90's hits all night long",
+      "clubId": "3"
+    },
+    {
+      "id": "c3d4",
+      "date": "2025-11-10 20:00",
+      "name": "Swan Lake",
+      "description": "A modern interpretation of the classic saga.",
+      "clubId": "b1e2"
+    },
+    {
+      "id": "e5f6",
+      "date": "2025-11-17 19:00",
+      "name": "The Nutcracker",
+      "description": "A magical Christmas performance for the whole family.",
+      "clubId": "b1e2"
+    },
+    {
+      "id": "8",
+      "date": "2025-11-12 20:00",
+      "name": "Opera Gala Night",
+      "description": "An evening of spectacular opera performances.",
+      "clubId": "7"
+    },
+    {
+      "id": "e7fc",
+      "clubId": "5",
+      "name": "Piano Evening",
+      "date": "2025-11-14",
+      "description": "A short performance featuring peaceful, original piano pieces played live — a quiet, relaxing moment to enjoy the sound of solo keys. Open from 18–22. Welcome!"
+    },
+    {
+      "id": "533c",
+      "clubId": "5",
+      "name": "Piano Morning",
+      "date": "2025-11-15",
+      "description": "Start your day with calm melodies and gentle piano tones that set a peaceful morning mood. Open from 08:00 to 12:00. Welcome!"
+    }
+
+  ],
+  "visitor": [
+    {
+      "eventid": "10",
+      "name": ".",
+      "clubId": "9",
+      "email": "a@a.com",
+      "id": "99f2"
+    },
+    {
+      "id": "a314",
+      "clubId": "7",
+      "eventid": "8",
+      "name": "fewfew",
+      "email": "test@test.com"
+    },
+    {
+      "id": "706b",
+      "clubId": "5",
+      "eventid": "4",
+      "name": "test",
+      "email": "test@test.com"
+    },
+    {
+      "id": "c169",
+      "clubId": "5",
+      "eventid": "4",
+      "name": "test",
+      "email": "test@test.com"
+    },
+    {
+      "id": "3b65",
+      "clubId": "3",
+      "eventid": "6",
+      "name": "aa",
+      "email": "daa@gmail.com"
+    },
+    {
+      "id": "d45b",
+      "clubId": "3",
+      "eventid": "6",
+      "name": "aa",
+      "email": "daa@gmail.com"
+    },
+    {
+      "id": "9d9e",
+      "clubId": "b1e2",
+      "eventid": "e5f6",
+      "name": "aa",
+      "email": "daa@gmail.com"
+    },
+    {
+      "id": "3755",
+      "clubId": "b1e2",
+      "eventid": "e5f6",
+      "name": "aa",
+      "email": "daa@gmail.com"
+    },
+    {
+      "id": "faaf",
+      "clubId": "b1e2",
+      "eventid": "c3d4",
+      "name": "aa",
+      "email": "daa@gmail.com"
+    },
+    {
+      "id": "5119",
+      "clubId": "b1e2",
+      "eventid": "c3d4",
+      "name": "aa",
+      "email": "daa@gmail.com"
+    },
+    {
+      "id": "01a9",
+      "clubId": "5",
+      "eventid": "a45b",
+      "name": "fewfew",
+      "email": "test@test.com"
+    },
+    {
+      "id": "83dd",
+      "clubId": "1",
+      "eventid": "2",
+      "name": "test",
+      "email": "o@o.com"
+    },
+    {
+      "id": "92d8",
+      "clubId": "3",
+      "eventid": "6",
+      "name": "testset",
+      "email": "ko@ko.com"
+    },
+    {
+      "id": "213a",
+      "clubId": "5",
+      "eventid": "a44b",
+      "name": "daniel",
+      "email": "gewrkg@geriog.com"
+    },
+    {
+      "id": "d94b",
+      "clubId": "5",
+      "eventid": "a44b",
+      "name": "fwefew",
+      "email": "test@test.com"
+    },
+    {
+      "id": "36f5",
+      "clubId": "5",
+      "eventid": "a45b",
+      "name": "Daniel",
+      "email": "test@test.com"
+    },
+    {
+      "id": "ce60",
+      "clubId": "3",
+      "eventid": "6",
+      "name": "fewfew",
+      "email": "o@o.com"
     }
   ]
 }
